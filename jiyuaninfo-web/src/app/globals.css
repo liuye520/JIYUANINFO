@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --color-dark: #0D1117;
+  --color-dark-card: #161B22;
+  --color-primary: #2B5AED;
+  --color-purple: #7B61FF;
+  --color-green: #10B981;
+  --color-green-alt: #00B42A;
+  --color-orange: #FF7D00;
+  --color-cyan: #00D4FF;
+  --color-pink: #FF6B9D;
+  --color-red: #EF4444;
+  --color-text-dark: #1D2129;
+  --color-text-body: #4E5969;
+  --color-text-muted: #86909C;
+  --color-text-light: #A0AEC0;
+  --color-text-dim: #8892A0;
+  --color-text-footer: #6B7280;
+  --color-text-copyright: #4B5563;
+  --color-bg-light: #F7F8FA;
+  --color-border: #E5E6EB;
+}
+
+@layer base {
+  html, body {
+    height: 100%;
+  }
+
+  .font-sans {
+    font-family: "Noto Sans SC", sans-serif;
+  }
+
+  .gradient-hero {
+    background: linear-gradient(160deg, #0D1117 0%, #0A1A3D 50%, #1A0D3B 100%);
+  }
+
+  .gradient-cta {
+    background: linear-gradient(135deg, #1A0D3B 0%, #0A1A3D 50%, #0D1117 100%);
+  }
+
+  .gradient-primary {
+    background: linear-gradient(90deg, #2B5AED 0%, #5B3CF5 100%);
+  }
+
+  .gradient-logo {
+    background: linear-gradient(135deg, #2B5AED 0%, #7B61FF 100%);
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, #2B5AED 0%, #7B61FF 50%, #00D4FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+body {
+  font-family: "Noto Sans SC", sans-serif;
+  color: var(--color-text-dark);
+}
