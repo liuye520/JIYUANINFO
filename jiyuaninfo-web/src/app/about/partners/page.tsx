@@ -26,8 +26,8 @@ export default function PartnersPage() {
       />
 
       {/* Section 1 - Intro */}
-      <section className="bg-white py-20 px-20">
-        <div className="flex flex-row gap-16">
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16">
           <div className="flex-1">
             <span className="rounded-full bg-[#2B5AED]/10 text-[#2B5AED] px-4 py-1.5 text-sm inline-block mb-4">
               合作生态
@@ -39,18 +39,18 @@ export default function PartnersPage() {
               济元信息科技与众多行业领先企业建立了深度战略合作关系，通过技术互补、资源共享、联合创新等方式，共同为客户提供更加完善的数字化解决方案。我们的合作伙伴涵盖云计算、人工智能、网络安全、大数据等核心技术领域，共同构建开放、共赢的数字化生态体系。
             </p>
           </div>
-          <div className="relative w-[480px] h-[360px] rounded-2xl overflow-hidden shrink-0">
+          <div className="relative w-full md:w-[480px] h-[240px] md:h-[300px] lg:h-[360px] rounded-2xl overflow-hidden shrink-0">
             <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/about-partners.jpg" alt="合作伙伴" fill className="object-cover" />
           </div>
         </div>
       </section>
 
       {/* Section 2 - Advantages */}
-      <section className="bg-[#F7F8FA] py-20 px-20">
-        <div className="text-center mb-12">
+      <section className="bg-[#F7F8FA] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-[#1D2129] mb-3">合作优势</h2>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[
             {
               icon: Share2,
@@ -81,7 +81,7 @@ export default function PartnersPage() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-8 text-center"
+                className="bg-white rounded-xl p-5 md:p-8 text-center"
               >
                 <div
                   className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5"
@@ -89,7 +89,7 @@ export default function PartnersPage() {
                 >
                   <Icon className="w-7 h-7" style={{ color: item.color }} />
                 </div>
-                <h3 className="text-lg font-semibold text-[#1D2129] mb-2">
+                <h3 className="text-base md:text-lg font-semibold text-[#1D2129] mb-2">
                   {item.title}
                 </h3>
                 <p className="text-sm text-[#86909C]">{item.desc}</p>
@@ -100,11 +100,11 @@ export default function PartnersPage() {
       </section>
 
       {/* Section 3 - Domains */}
-      <section className="bg-white py-20 px-20">
-        <div className="text-center mb-12">
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-[#1D2129] mb-3">合作领域</h2>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[
             {
               icon: Cloud,
@@ -135,7 +135,7 @@ export default function PartnersPage() {
             return (
               <div
                 key={index}
-                className="bg-[#F7F8FA] rounded-xl p-8 text-center"
+                className="bg-[#F7F8FA] rounded-xl p-5 md:p-8 text-center"
               >
                 <div
                   className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5"
@@ -143,7 +143,7 @@ export default function PartnersPage() {
                 >
                   <Icon className="w-7 h-7" style={{ color: item.color }} />
                 </div>
-                <h3 className="text-lg font-semibold text-[#1D2129] mb-2">
+                <h3 className="text-base md:text-lg font-semibold text-[#1D2129] mb-2">
                   {item.title}
                 </h3>
                 <p className="text-sm text-[#86909C]">{item.desc}</p>
@@ -154,11 +154,11 @@ export default function PartnersPage() {
       </section>
 
       {/* Section 4 - Stats */}
-      <section className="bg-[#0D1117] py-20 px-20">
-        <div className="text-center mb-12">
+      <section className="bg-[#0D1117] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-white mb-3">战略伙伴</h2>
         </div>
-        <div className="flex justify-center gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[
             {
               number: "10+",
@@ -187,15 +187,15 @@ export default function PartnersPage() {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-white/[0.06] border border-white/[0.06] rounded-xl p-8 w-[280px] text-center"
+              className="bg-white/[0.06] border border-white/[0.06] rounded-xl p-5 md:p-8 w-full text-center"
             >
               <div
-                className="text-[40px] font-bold mb-3"
+                className="text-2xl md:text-[32px] lg:text-[40px] font-bold mb-3"
                 style={{ color: item.color }}
               >
                 {item.number}
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">
+              <h3 className="text-base md:text-lg font-semibold text-white mb-2">
                 {item.title}
               </h3>
               <p className="text-sm text-[#A0AEC0]">{item.desc}</p>
@@ -205,11 +205,11 @@ export default function PartnersPage() {
       </section>
 
       {/* Section 5 - Results */}
-      <section className="bg-[#F7F8FA] py-20 px-20">
-        <div className="text-center mb-12">
+      <section className="bg-[#F7F8FA] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-[#1D2129] mb-3">合作成果</h2>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[
             { number: "100+", color: "#2B5AED", label: "联合交付项目" },
             { number: "300%", color: "#7B61FF", label: "业绩增长" },
@@ -218,15 +218,15 @@ export default function PartnersPage() {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-8 text-center"
+              className="bg-white rounded-xl p-5 md:p-8 text-center"
             >
               <div
-                className="text-[40px] font-bold mb-3"
+                className="text-2xl md:text-[32px] lg:text-[40px] font-bold mb-3"
                 style={{ color: item.color }}
               >
                 {item.number}
               </div>
-              <p className="text-lg text-[#4E5969]">{item.label}</p>
+              <p className="text-base md:text-lg text-[#4E5969]">{item.label}</p>
             </div>
           ))}
         </div>

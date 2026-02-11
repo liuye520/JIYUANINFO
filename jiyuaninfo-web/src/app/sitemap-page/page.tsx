@@ -116,7 +116,7 @@ function Card({ card }: { card: SitemapCard }) {
   return (
     <div className="bg-white rounded-xl overflow-hidden flex-1">
       <div className="h-1" style={{ backgroundColor: card.color }} />
-      <div className="p-7 flex flex-col gap-3">
+      <div className="p-5 md:p-7 flex flex-col gap-3">
         <h3 className="text-lg font-bold text-[#1D2129]">{card.title}</h3>
         <p className="text-[13px] text-[#86909C]">{card.description}</p>
         <div className="h-px bg-[#E5E6EB]" />
@@ -153,29 +153,29 @@ export default function SitemapPage() {
         subtitle="快速浏览网站所有页面，找到您需要的内容"
       />
 
-      <section className="bg-[#F7F8FA] py-[60px] px-20">
+      <section className="bg-[#F7F8FA] py-10 md:py-[60px] px-4 md:px-10 lg:px-20">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-[28px] font-bold text-[#1D2129]">全站导航</h2>
-          <p className="text-[15px] text-[#86909C] mt-2 mb-10">
+          <h2 className="text-xl md:text-[28px] font-bold text-[#1D2129]">全站导航</h2>
+          <p className="text-sm md:text-[15px] text-[#86909C] mt-2 mb-6 md:mb-10">
             以下列出了网站的所有栏目和页面，方便您快速找到所需内容
           </p>
 
           {/* 第一行: 3列 */}
-          <div className="flex gap-6 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-4 md:mb-6">
             {row1.map((card) => (
               <Card key={card.title} card={card} />
             ))}
           </div>
 
           {/* 第二行: 3列 */}
-          <div className="flex gap-6 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-4 md:mb-6">
             {row2.map((card) => (
               <Card key={card.title} card={card} />
             ))}
           </div>
 
           {/* 第三行: 2列 */}
-          <div className="flex gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             {row3.map((card) => (
               <Card key={card.title} card={card} />
             ))}

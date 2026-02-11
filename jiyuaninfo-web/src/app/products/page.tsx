@@ -66,29 +66,29 @@ export default function ProductsPage() {
         subtitle="从软件定制到移动应用，为您提供全方位的数字化产品开发服务"
       />
 
-      <section className="bg-white py-16 px-20">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20">
         <div className="flex flex-col gap-0">
           {products.map((product, index) => {
             const isReversed = index % 2 !== 0;
             return (
               <div
                 key={product.title}
-                className={`flex items-center gap-16 py-16 ${index > 0 ? "border-t border-[#E5E6EB]" : ""}`}
+                className={`flex flex-col md:flex-row items-center gap-8 md:gap-16 py-10 md:py-16 ${index > 0 ? "border-t border-[#E5E6EB]" : ""}`}
               >
                 {isReversed && (
-                  <div className="relative w-[500px] shrink-0 rounded-xl h-[340px] overflow-hidden">
+                  <div className="relative w-full md:w-[500px] shrink-0 rounded-xl h-[220px] md:h-[280px] lg:h-[340px] overflow-hidden">
                     <Image src={product.image} alt={product.title} fill className="object-cover" />
                     <div className={`absolute inset-0 bg-gradient-to-br ${product.overlayGradient}`} />
                   </div>
                 )}
 
-                <div className="flex-1 flex flex-col gap-6">
+                <div className="flex-1 flex flex-col gap-4 md:gap-6">
                   <span
                     className={`inline-flex items-center self-start px-3 py-1 rounded-md text-sm font-medium ${product.badgeBg} ${product.badgeText}`}
                   >
                     {product.badge}
                   </span>
-                  <h3 className="text-[#1D2129] text-[32px] font-bold">
+                  <h3 className="text-[#1D2129] text-xl md:text-[28px] lg:text-[32px] font-bold">
                     {product.title}
                   </h3>
                   <p className="text-[#4E5969] text-base leading-[1.8]">
@@ -118,7 +118,7 @@ export default function ProductsPage() {
                 </div>
 
                 {!isReversed && (
-                  <div className="relative w-[500px] shrink-0 rounded-xl h-[340px] overflow-hidden">
+                  <div className="relative w-full md:w-[500px] shrink-0 rounded-xl h-[220px] md:h-[280px] lg:h-[340px] overflow-hidden">
                     <Image src={product.image} alt={product.title} fill className="object-cover" />
                     <div className={`absolute inset-0 bg-gradient-to-br ${product.overlayGradient}`} />
                   </div>

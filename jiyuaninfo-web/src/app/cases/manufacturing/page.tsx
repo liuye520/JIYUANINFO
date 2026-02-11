@@ -54,8 +54,8 @@ export default function ManufacturingCasePage() {
       />
 
       {/* 项目概览 */}
-      <section className="bg-white py-12 px-20">
-        <div className="max-w-7xl mx-auto flex gap-12">
+      <section className="bg-white py-8 px-4 md:py-12 md:px-10 lg:px-20">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 md:gap-12">
           <div className="flex-1">
             <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-[#10B981]/20 text-[#10B981] mb-4">
               智能制造
@@ -64,7 +64,7 @@ export default function ManufacturingCasePage() {
             <p className="text-[#4E5969] leading-relaxed mb-8">
               该集团年产值超20亿元，拥有多条自动化产线。面临产线数据不透明、质检依赖人工、设备维护被动等问题。济元信息为其提供工业5.0智能制造整体方案。
             </p>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {info.map((item) => (
                 <div
                   key={item.label}
@@ -80,7 +80,7 @@ export default function ManufacturingCasePage() {
             </div>
           </div>
           <div className="flex-1">
-            <div className="relative rounded-xl overflow-hidden h-[300px] w-full">
+            <div className="relative rounded-xl overflow-hidden h-[200px] md:h-[300px] w-full">
               <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/case-detail-manufacturing.jpg" alt="智能制造案例" fill className="object-cover" />
             </div>
           </div>
@@ -88,14 +88,14 @@ export default function ManufacturingCasePage() {
       </section>
 
       {/* 挑战与解决方案 */}
-      <section className="bg-[#F7F8FA] py-12 px-20">
+      <section className="bg-[#F7F8FA] py-8 px-4 md:py-12 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-bold text-[#1D2129] mb-8 text-center">挑战与解决方案</h2>
-          <div className="grid grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl p-8">
+          <h2 className="text-2xl font-bold text-[#1D2129] mb-6 md:mb-8 text-center">挑战与解决方案</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            <div className="bg-white rounded-xl p-5 md:p-8">
               <div className="flex items-center gap-2 mb-6">
                 <AlertTriangle className="w-5 h-5 text-[#FF7D00]" />
-                <h3 className="text-lg font-semibold text-[#1D2129]">面临挑战</h3>
+                <h3 className="text-base md:text-lg font-semibold text-[#1D2129]">面临挑战</h3>
               </div>
               <ul className="space-y-4">
                 {challenges.map((item, i) => (
@@ -106,10 +106,10 @@ export default function ManufacturingCasePage() {
                 ))}
               </ul>
             </div>
-            <div className="bg-white rounded-xl p-8">
+            <div className="bg-white rounded-xl p-5 md:p-8">
               <div className="flex items-center gap-2 mb-6">
                 <CheckCircle className="w-5 h-5 text-[#10B981]" />
-                <h3 className="text-lg font-semibold text-[#1D2129]">解决方案</h3>
+                <h3 className="text-base md:text-lg font-semibold text-[#1D2129]">解决方案</h3>
               </div>
               <ul className="space-y-4">
                 {solutions.map((item, i) => (
@@ -125,12 +125,12 @@ export default function ManufacturingCasePage() {
       </section>
 
       {/* 项目成果 */}
-      <section className="py-12 px-20">
+      <section className="py-8 px-4 md:py-12 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-bold text-[#1D2129] mb-8 text-center">项目成果</h2>
-          <div className="grid grid-cols-4 gap-6">
+          <h2 className="text-2xl font-bold text-[#1D2129] mb-6 md:mb-8 text-center">项目成果</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {results.map((item) => (
-              <div key={item.label} className="rounded-xl bg-[#F7F8FA] p-8 text-center">
+              <div key={item.label} className="rounded-xl bg-[#F7F8FA] p-5 md:p-8 text-center">
                 <div className="text-3xl font-bold mb-2" style={{ color: item.color }}>
                   {item.value}
                 </div>
@@ -142,10 +142,10 @@ export default function ManufacturingCasePage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-12 px-20">
+      <section className="bg-white py-8 px-4 md:py-12 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-2xl font-bold text-[#1D2129] mb-8">想了解更多智能制造解决方案？</h2>
-          <div className="flex items-center justify-center gap-4">
+          <h2 className="text-2xl font-bold text-[#1D2129] mb-6 md:mb-8">想了解更多智能制造解决方案？</h2>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               prefetch={false}
               href="/contact"

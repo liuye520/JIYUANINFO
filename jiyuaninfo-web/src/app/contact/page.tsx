@@ -16,8 +16,8 @@ export default function ContactPage() {
       />
 
       {/* Section 1 - Main */}
-      <section className="bg-[#F7F8FA] py-16 px-20">
-        <div className="flex flex-row gap-12">
+      <section className="bg-[#F7F8FA] py-12 md:py-16 px-4 md:px-10 lg:px-20">
+        <div className="flex flex-col lg:flex-row gap-8 md:gap-12">
           {/* Left side - Contact Info */}
           <div className="flex-1">
             <h2 className="text-[28px] font-bold text-[#1D2129] mb-2">
@@ -83,13 +83,13 @@ export default function ContactPage() {
           </div>
 
           {/* Right side - Form */}
-          <div className="bg-white rounded-2xl p-10 shadow-sm flex-1">
+          <div className="bg-white rounded-2xl p-5 md:p-8 lg:p-10 shadow-sm flex-1">
             <h3 className="text-xl font-bold text-[#1D2129] mb-2">在线咨询</h3>
             <p className="text-sm text-[#86909C] mb-8">
               留下您的需求，我们将尽快与您联系
             </p>
             <form className="flex flex-col gap-5">
-              <div className="flex gap-4">
+              <div className="flex flex-col md:flex-row gap-4 md:gap-4">
                 <div className="flex-1">
                   <label className="text-sm font-medium text-[#1D2129] mb-2 block">
                     您的姓名
@@ -111,7 +111,7 @@ export default function ContactPage() {
                   />
                 </div>
               </div>
-              <div className="flex gap-4">
+              <div className="flex flex-col md:flex-row gap-4 md:gap-4">
                 <div className="flex-1">
                   <label className="text-sm font-medium text-[#1D2129] mb-2 block">
                     公司名称
@@ -154,7 +154,7 @@ export default function ContactPage() {
       </section>
 
       {/* Section 2 - Map */}
-      <section className="bg-[#F7F8FA] pb-20 px-20">
+      <section className="bg-[#F7F8FA] pb-12 md:pb-20 px-4 md:px-10 lg:px-20">
         <h2 className="text-[28px] font-bold text-[#1D2129] mb-6">公司位置</h2>
         <div className="relative rounded-xl overflow-hidden h-[300px]">
           <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/contact-location.jpg" alt="公司位置" fill className="object-cover" />

@@ -84,20 +84,20 @@ export default function MiniProgramPage() {
       />
 
       {/* 为什么选择小程序 */}
-      <section className="bg-[#F7F8FA] py-16 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
-          <h2 className="text-[#1D2129] text-[36px] font-bold text-center">
+      <section className="bg-[#F7F8FA] py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-4 mb-8 md:mb-12">
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[36px] font-bold text-center">
             为什么选择小程序
           </h2>
           <p className="text-[#86909C] text-base text-center">
             轻量级应用，无需下载安装，即开即用
           </p>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {advantages.map((a) => (
             <div
               key={a.title}
-              className="rounded-xl bg-white border border-[#E5E6EB] p-8 flex flex-col gap-5 hover:shadow-lg transition-shadow"
+              className="rounded-xl bg-white border border-[#E5E6EB] p-5 md:p-8 flex flex-col gap-5 hover:shadow-lg transition-shadow"
             >
               <div className="w-14 h-14 rounded-xl bg-white border border-[#E5E6EB] flex items-center justify-center">
                 <a.icon className="w-7 h-7" style={{ color: a.color }} />
@@ -110,28 +110,28 @@ export default function MiniProgramPage() {
       </section>
 
       {/* 小程序管理后台 */}
-      <section className="bg-white py-16 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-4 mb-8 md:mb-12">
           <span className="text-[#10B981] text-sm font-semibold tracking-widest">
             小程序管理后台
           </span>
-          <h2 className="text-[#1D2129] text-[36px] font-bold text-center">
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[36px] font-bold text-center">
             数据驱动营销，精准触达用户
           </h2>
         </div>
-        <div className="relative rounded-xl overflow-hidden h-[400px]">
+        <div className="relative rounded-xl overflow-hidden h-[200px] md:h-[300px] lg:h-[400px]">
           <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/miniprogram-dev.jpg" alt="小程序开发" fill className="object-cover" />
         </div>
       </section>
 
       {/* 服务数据 */}
-      <section className="gradient-cta py-16 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
-          <h2 className="text-white text-[36px] font-bold text-center">
+      <section className="gradient-cta py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-4 mb-8 md:mb-12">
+          <h2 className="text-white text-2xl md:text-[32px] lg:text-[36px] font-bold text-center">
             服务数据
           </h2>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {stats.map((stat) => (
             <div
               key={stat.label}
@@ -150,23 +150,23 @@ export default function MiniProgramPage() {
       </section>
 
       {/* 平台覆盖 */}
-      <section className="bg-white py-16 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-4 mb-8 md:mb-12">
           <span className="text-[#2B5AED] text-sm font-semibold tracking-widest">
             平台覆盖
           </span>
-          <h2 className="text-[#1D2129] text-[36px] font-bold text-center">
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[36px] font-bold text-center">
             平台覆盖
           </h2>
           <p className="text-[#86909C] text-base text-center">
             多平台小程序开发，全面覆盖主流生态
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {platforms.map((p) => (
             <div
               key={p.title}
-              className="rounded-xl border border-[#E5E6EB] p-8 flex flex-col gap-5 hover:shadow-lg transition-shadow"
+              className="rounded-xl border border-[#E5E6EB] p-5 md:p-8 flex flex-col gap-5 hover:shadow-lg transition-shadow"
             >
               <div
                 className={`w-14 h-14 rounded-xl ${p.bg} flex items-center justify-center`}
@@ -181,12 +181,12 @@ export default function MiniProgramPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-16 px-20 text-center">
-        <div className="flex flex-col items-center gap-6">
-          <h2 className="text-[#1D2129] text-[36px] font-bold">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20 text-center">
+        <div className="flex flex-col items-center gap-4 md:gap-6">
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[36px] font-bold">
             快速开启小程序之旅
           </h2>
-          <p className="text-[#86909C] text-lg max-w-[600px]">
+          <p className="text-[#86909C] text-base md:text-lg max-w-[600px]">
             多平台小程序一站式开发，从设计到上线全程陪伴
           </p>
           <Link

@@ -18,11 +18,11 @@ export default function EducationPage() {
       />
 
       {/* Features */}
-      <section className="bg-white py-20 px-20">
-        <h2 className="text-[32px] font-bold text-[#1D2129] text-center mb-12">
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <h2 className="text-xl md:text-[28px] lg:text-[32px] font-bold text-[#1D2129] text-center mb-8 md:mb-12">
           智慧教育核心模块
         </h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           <div className="rounded-xl bg-[#F7F8FA] p-7 flex flex-col gap-4">
             <div className="w-12 h-12 rounded-xl bg-[#2B5AED]/10 flex items-center justify-center">
               <BookOpen className="w-6 h-6 text-[#2B5AED]" />
@@ -54,7 +54,7 @@ export default function EducationPage() {
       </section>
 
       {/* Dashboard */}
-      <section className="bg-[#F7F8FA] py-12 px-20">
+      <section className="bg-[#F7F8FA] py-8 px-4 md:py-12 md:px-10 lg:px-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-2">
             教学数据可视化中心
@@ -62,40 +62,40 @@ export default function EducationPage() {
           <p className="text-sm text-[#86909C] text-center mb-8">
             全面掌握教学质量数据，驱动教育决策科学化
           </p>
-          <div className="relative rounded-xl overflow-hidden h-[480px]">
+          <div className="relative rounded-xl overflow-hidden h-[240px] md:h-[360px] lg:h-[480px]">
             <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-education.jpg" alt="智慧教育数据中心" fill className="object-cover" />
           </div>
         </div>
       </section>
 
       {/* Stats */}
-      <section className="py-16 px-20">
-        <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-12">
+      <section className="py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-8 md:mb-12">
           方案价值
         </h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
           <div>
-            <div className="text-[42px] font-extrabold text-[#2B5AED]">500+</div>
+            <div className="text-2xl md:text-[32px] lg:text-[42px] font-extrabold text-[#2B5AED]">500+</div>
             <div className="text-sm text-[#86909C]">服务学校</div>
           </div>
           <div>
-            <div className="text-[42px] font-extrabold text-[#7B61FF]">100万+</div>
+            <div className="text-2xl md:text-[32px] lg:text-[42px] font-extrabold text-[#7B61FF]">100万+</div>
             <div className="text-sm text-[#86909C]">学生用户</div>
           </div>
           <div>
-            <div className="text-[42px] font-extrabold text-[#10B981]">40%</div>
+            <div className="text-2xl md:text-[32px] lg:text-[42px] font-extrabold text-[#10B981]">40%</div>
             <div className="text-sm text-[#86909C]">成绩平均提升</div>
           </div>
           <div>
-            <div className="text-[42px] font-extrabold text-[#FF7D00]">95%</div>
+            <div className="text-2xl md:text-[32px] lg:text-[42px] font-extrabold text-[#FF7D00]">95%</div>
             <div className="text-sm text-[#86909C]">教师满意度</div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-16 px-20 text-center">
-        <h2 className="text-[32px] font-bold text-[#1D2129] mb-4">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20 text-center">
+        <h2 className="text-xl md:text-[28px] lg:text-[32px] font-bold text-[#1D2129] mb-4">
           让教育更智慧
         </h2>
         <p className="text-[#4E5969] mb-8">

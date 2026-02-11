@@ -36,10 +36,10 @@ const footerColumns = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0D1117] pt-[60px] pb-[30px] px-20">
-      <div className="flex gap-[60px]">
+    <footer className="bg-[#0D1117] pt-10 md:pt-[60px] pb-6 md:pb-[30px] px-4 md:px-10 lg:px-20">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-[60px]">
         {/* Brand */}
-        <div className="w-80 shrink-0 flex flex-col gap-4">
+        <div className="md:w-80 shrink-0 flex flex-col gap-4">
           <div className="flex items-center gap-2.5">
             <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/logo-icon.jpg" alt="济元信息" width={32} height={32} className="h-8 w-8 rounded-md" />
             <span className="text-white text-base font-bold">济元信息</span>
@@ -50,28 +50,30 @@ export default function Footer() {
         </div>
 
         {/* Link columns */}
-        {footerColumns.map((col) => (
-          <div key={col.title} className="flex-1 flex flex-col gap-4">
-            <h4 className="text-white text-sm font-semibold">{col.title}</h4>
-            {col.links.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                prefetch={false}
-                className="text-[#6B7280] text-[13px] hover:text-white transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        ))}
+        <div className="grid grid-cols-3 gap-6 md:gap-0 md:flex md:flex-1">
+          {footerColumns.map((col) => (
+            <div key={col.title} className="flex-1 flex flex-col gap-3 md:gap-4">
+              <h4 className="text-white text-sm font-semibold">{col.title}</h4>
+              {col.links.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  prefetch={false}
+                  className="text-[#6B7280] text-xs md:text-[13px] hover:text-white transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Divider */}
-      <div className="h-px bg-white/[0.06] my-10" />
+      <div className="h-px bg-white/[0.06] my-6 md:my-10" />
 
       {/* Bottom */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-3">
         <span className="text-[#4B5563] text-xs flex items-center gap-1">
           Copyright © 2025 吉林省济元信息科技有限公司
           <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/beian-icon.png" alt="备案" width={14} height={14} className="inline-block" />

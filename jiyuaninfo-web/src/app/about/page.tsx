@@ -28,8 +28,8 @@ export default function AboutPage() {
       />
 
       {/* Section 1 - Intro */}
-      <section className="bg-white py-20 px-20">
-        <div className="flex flex-row gap-16">
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16">
           <div className="flex-1">
             <span className="rounded-full bg-[#2B5AED]/10 text-[#2B5AED] px-4 py-1.5 text-sm inline-block mb-4">
               公司简介
@@ -44,19 +44,19 @@ export default function AboutPage() {
               公司业务涵盖软件定制开发、APP应用开发、小程序开发、系统集成、大数据分析、企业AI大模型部署等核心领域，服务范围覆盖智慧医疗、智能制造、智慧教育、智慧社区等20余个行业领域。
             </p>
           </div>
-          <div className="relative w-[480px] h-[360px] rounded-2xl overflow-hidden shrink-0">
+          <div className="relative w-full md:w-[480px] h-[240px] md:h-[300px] lg:h-[360px] rounded-2xl overflow-hidden shrink-0">
             <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/about-company.jpg" alt="济元信息科技" fill className="object-cover" />
           </div>
         </div>
       </section>
 
       {/* Section 2 - Values */}
-      <section className="bg-[#F7F8FA] py-20 px-20">
-        <div className="text-center mb-12">
+      <section className="bg-[#F7F8FA] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-[#1D2129] mb-3">企业价值观</h2>
           <p className="text-[#86909C]">我们坚守的核心理念</p>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[
             {
               icon: Target,
@@ -87,7 +87,7 @@ export default function AboutPage() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-8 text-center"
+                className="bg-white rounded-xl p-5 md:p-8 text-center"
               >
                 <div
                   className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5"
@@ -95,7 +95,7 @@ export default function AboutPage() {
                 >
                   <Icon className="w-7 h-7" style={{ color: item.color }} />
                 </div>
-                <h3 className="text-lg font-semibold text-[#1D2129] mb-2">
+                <h3 className="text-base md:text-lg font-semibold text-[#1D2129] mb-2">
                   {item.title}
                 </h3>
                 <p className="text-sm text-[#86909C]">{item.desc}</p>
@@ -106,12 +106,12 @@ export default function AboutPage() {
       </section>
 
       {/* Section 3 - Milestones */}
-      <section className="bg-white py-20 px-20">
-        <div className="text-center mb-12">
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-[#1D2129] mb-3">发展历程</h2>
           <p className="text-[#86909C]">砥砺前行的每一步</p>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[
             {
               year: "2015",
@@ -140,15 +140,15 @@ export default function AboutPage() {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-[#F7F8FA] rounded-xl p-8 text-center"
+              className="bg-[#F7F8FA] rounded-xl p-5 md:p-8 text-center"
             >
               <div
-                className="text-[32px] font-bold mb-3"
+                className="text-xl md:text-[28px] lg:text-[32px] font-bold mb-3"
                 style={{ color: item.color }}
               >
                 {item.year}
               </div>
-              <h3 className="text-lg font-semibold text-[#1D2129] mb-2">
+              <h3 className="text-base md:text-lg font-semibold text-[#1D2129] mb-2">
                 {item.title}
               </h3>
               <p className="text-sm text-[#86909C]">{item.desc}</p>
@@ -158,12 +158,12 @@ export default function AboutPage() {
       </section>
 
       {/* Section 4 - Team */}
-      <section className="bg-[#0D1117] py-20 px-20">
-        <div className="text-center mb-12">
+      <section className="bg-[#0D1117] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-white mb-3">团队实力</h2>
           <p className="text-[#A0AEC0]">汇聚行业精英，组建专业团队</p>
         </div>
-        <div className="flex justify-center gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[
             {
               icon: Code,
@@ -198,7 +198,7 @@ export default function AboutPage() {
             return (
               <div
                 key={index}
-                className="bg-white/[0.06] border border-white/[0.06] rounded-xl p-8 w-[280px] text-center"
+                className="bg-white/[0.06] border border-white/[0.06] rounded-xl p-5 md:p-8 w-full text-center"
               >
                 <div
                   className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-5"
@@ -206,11 +206,11 @@ export default function AboutPage() {
                 >
                   <Icon className="w-8 h-8" style={{ color: item.color }} />
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">
+                <h3 className="text-base md:text-lg font-semibold text-white mb-2">
                   {item.title}
                 </h3>
                 <div
-                  className="text-[32px] font-bold mb-2"
+                  className="text-xl md:text-[28px] lg:text-[32px] font-bold mb-2"
                   style={{ color: item.color }}
                 >
                   {item.number}
@@ -223,11 +223,11 @@ export default function AboutPage() {
       </section>
 
       {/* Section 5 - Certs */}
-      <section className="bg-[#F7F8FA] py-20 px-20">
-        <div className="text-center mb-12">
+      <section className="bg-[#F7F8FA] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-[#1D2129] mb-3">资质认证</h2>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[
             {
               icon: Award,
@@ -258,7 +258,7 @@ export default function AboutPage() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-8 text-center"
+                className="bg-white rounded-xl p-5 md:p-8 text-center"
               >
                 <div
                   className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-5"
@@ -266,7 +266,7 @@ export default function AboutPage() {
                 >
                   <Icon className="w-6 h-6" style={{ color: item.color }} />
                 </div>
-                <h3 className="text-lg font-semibold text-[#1D2129] mb-2">
+                <h3 className="text-base md:text-lg font-semibold text-[#1D2129] mb-2">
                   {item.title}
                 </h3>
                 <p className="text-sm text-[#86909C]">{item.desc}</p>

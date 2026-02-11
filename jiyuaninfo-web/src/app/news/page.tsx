@@ -79,15 +79,15 @@ export default function NewsPage() {
       />
 
       {/* 主内容区 */}
-      <section className="bg-[#F7F8FA] py-20 px-20">
+      <section className="bg-[#F7F8FA] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
         {/* 区块标题 */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-[#1D2129] mb-3">最新资讯</h2>
           <p className="text-[#86909C]">掌握前沿技术趋势，洞察行业发展方向</p>
         </div>
 
         {/* 标签过滤 */}
-        <div className="flex items-center gap-3 mb-10">
+        <div className="flex flex-wrap items-center gap-3 mb-6 md:mb-10">
           {tabs.map((tab) => (
             <button
               key={tab}
@@ -104,8 +104,8 @@ export default function NewsPage() {
         </div>
 
         {/* 精选文章卡片 */}
-        <div className="bg-white rounded-xl overflow-hidden mb-10">
-          <div className="relative h-[360px]">
+        <div className="bg-white rounded-xl overflow-hidden mb-6 md:mb-10">
+          <div className="relative h-[200px] md:h-[280px] lg:h-[360px]">
             <Image
               src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-featured.jpg"
               alt="精选文章"
@@ -113,7 +113,7 @@ export default function NewsPage() {
               className="object-cover"
             />
           </div>
-          <div className="p-8">
+          <div className="p-5 md:p-8">
             <span
               className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-4"
               style={{
@@ -143,7 +143,7 @@ export default function NewsPage() {
         </div>
 
         {/* 新闻卡片网格 */}
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {filteredCards.map((card, index) => (
             <Link
               prefetch={false}
@@ -188,7 +188,7 @@ export default function NewsPage() {
       </section>
 
       {/* CTA区块 */}
-      <section className="bg-white py-20 px-20 text-center">
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20 text-center">
         <h2 className="text-[28px] font-bold text-[#1D2129] mb-3">
           想了解更多行业资讯？
         </h2>

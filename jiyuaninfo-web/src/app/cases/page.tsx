@@ -74,13 +74,13 @@ export default function CasesPage() {
       />
 
       {/* 精选案例 */}
-      <section className="bg-[#F7F8FA] py-16 px-20">
+      <section className="bg-[#F7F8FA] py-12 md:py-16 px-4 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <h2 className="text-3xl font-bold text-[#1D2129] mb-3">精选案例</h2>
             <p className="text-[#86909C]">覆盖医疗、教育、制造、电商等多行业领域</p>
           </div>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             {cases.map((item) => (
               <Link
                 prefetch={false}
@@ -106,9 +106,9 @@ export default function CasesPage() {
       </section>
 
       {/* 数据统计 */}
-      <section className="bg-white py-16 px-20">
+      <section className="bg-white py-12 md:py-16 px-4 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <stat.icon className="w-8 h-8 text-[#2B5AED] mx-auto mb-4" />
@@ -121,7 +121,7 @@ export default function CasesPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#F7F8FA] py-16 px-20">
+      <section className="bg-[#F7F8FA] py-12 md:py-16 px-4 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-[#1D2129] mb-4">期待成为您的合作伙伴</h2>
           <p className="text-[#86909C] mb-8">

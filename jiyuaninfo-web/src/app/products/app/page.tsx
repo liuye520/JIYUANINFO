@@ -81,23 +81,23 @@ export default function AppPage() {
       />
 
       {/* 开发流程 */}
-      <section className="bg-[#F7F8FA] py-16 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
-          <h2 className="text-[#1D2129] text-[36px] font-bold text-center">
+      <section className="bg-[#F7F8FA] py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-4 mb-8 md:mb-12">
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[36px] font-bold text-center">
             开发流程
           </h2>
           <p className="text-[#86909C] text-base text-center">
             标准化开发流程，确保项目高质量交付
           </p>
         </div>
-        <div className="grid grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
           {processSteps.map((step) => (
             <div
               key={step.num}
-              className="rounded-xl bg-white border border-[#E5E6EB] p-8 flex flex-col gap-4"
+              className="rounded-xl bg-white border border-[#E5E6EB] p-5 md:p-8 flex flex-col gap-4"
             >
               <span
-                className="text-[40px] font-bold opacity-20"
+                className="text-2xl md:text-[32px] lg:text-[40px] font-bold opacity-20"
                 style={{ color: step.color }}
               >
                 {step.num}
@@ -114,28 +114,28 @@ export default function AppPage() {
       </section>
 
       {/* 技术实力 */}
-      <section className="bg-white py-16 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-4 mb-8 md:mb-12">
           <span className="text-[#7B61FF] text-sm font-semibold tracking-widest">
             技术实力
           </span>
-          <h2 className="text-[#1D2129] text-[36px] font-bold text-center">
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[36px] font-bold text-center">
             覆盖多场景的移动端技术体系
           </h2>
         </div>
-        <div className="relative rounded-xl overflow-hidden h-[400px]">
+        <div className="relative rounded-xl overflow-hidden h-[200px] md:h-[300px] lg:h-[400px]">
           <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/app-dev.jpg" alt="APP应用开发" fill className="object-cover" />
         </div>
       </section>
 
       {/* 项目数据 */}
-      <section className="gradient-cta py-16 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
-          <h2 className="text-white text-[36px] font-bold text-center">
+      <section className="gradient-cta py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-4 mb-8 md:mb-12">
+          <h2 className="text-white text-2xl md:text-[32px] lg:text-[36px] font-bold text-center">
             项目数据
           </h2>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {stats.map((stat) => (
             <div
               key={stat.label}
@@ -154,23 +154,23 @@ export default function AppPage() {
       </section>
 
       {/* 应用场景 */}
-      <section className="bg-white py-16 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-4 mb-8 md:mb-12">
           <span className="text-[#2B5AED] text-sm font-semibold tracking-widest">
             应用场景
           </span>
-          <h2 className="text-[#1D2129] text-[36px] font-bold text-center">
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[36px] font-bold text-center">
             应用场景
           </h2>
           <p className="text-[#86909C] text-base text-center">
             覆盖多种业务场景的移动端解决方案
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {scenarios.map((s) => (
             <div
               key={s.title}
-              className="rounded-xl border border-[#E5E6EB] p-8 flex flex-col gap-5 hover:shadow-lg transition-shadow"
+              className="rounded-xl border border-[#E5E6EB] p-5 md:p-8 flex flex-col gap-5 hover:shadow-lg transition-shadow"
             >
               <div
                 className={`w-14 h-14 rounded-xl ${s.bg} flex items-center justify-center`}
@@ -185,12 +185,12 @@ export default function AppPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-16 px-20 text-center">
-        <div className="flex flex-col items-center gap-6">
-          <h2 className="text-[#1D2129] text-[36px] font-bold">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20 text-center">
+        <div className="flex flex-col items-center gap-4 md:gap-6">
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[36px] font-bold">
             开启您的移动应用之旅
           </h2>
-          <p className="text-[#86909C] text-lg max-w-[600px]">
+          <p className="text-[#86909C] text-base md:text-lg max-w-[600px]">
             专业团队为您量身打造高品质APP，从需求到上线全程无忧
           </p>
           <Link

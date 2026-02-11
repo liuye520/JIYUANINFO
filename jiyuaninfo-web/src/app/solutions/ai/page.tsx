@@ -18,11 +18,11 @@ export default function AIPage() {
       />
 
       {/* Features */}
-      <section className="bg-white py-20 px-20">
-        <h2 className="text-[32px] font-bold text-[#1D2129] text-center mb-12">
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <h2 className="text-xl md:text-[28px] lg:text-[32px] font-bold text-[#1D2129] text-center mb-8 md:mb-12">
           企业AI核心能力
         </h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           <div className="rounded-xl bg-[#F7F8FA] p-7 flex flex-col gap-4">
             <div className="w-12 h-12 rounded-xl bg-[#7B61FF]/10 flex items-center justify-center">
               <Brain className="w-6 h-6 text-[#7B61FF]" />
@@ -54,7 +54,7 @@ export default function AIPage() {
       </section>
 
       {/* Dashboard */}
-      <section className="bg-[#F7F8FA] py-12 px-20">
+      <section className="bg-[#F7F8FA] py-8 px-4 md:py-12 md:px-10 lg:px-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-2">
             AI大模型管理平台
@@ -62,40 +62,40 @@ export default function AIPage() {
           <p className="text-sm text-[#86909C] text-center mb-8">
             统一管理模型训练、推理、监控全生命周期，一站式AI运营中心
           </p>
-          <div className="relative rounded-xl overflow-hidden h-[480px]">
+          <div className="relative rounded-xl overflow-hidden h-[240px] md:h-[360px] lg:h-[480px]">
             <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-ai.jpg" alt="AI大模型管理平台" fill className="object-cover" />
           </div>
         </div>
       </section>
 
       {/* Stats */}
-      <section className="py-16 px-20">
-        <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-12">
+      <section className="py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-8 md:mb-12">
           方案价值
         </h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
           <div>
-            <div className="text-[42px] font-extrabold text-[#7B61FF]">50+</div>
+            <div className="text-2xl md:text-[32px] lg:text-[42px] font-extrabold text-[#7B61FF]">50+</div>
             <div className="text-sm text-[#86909C]">行业模型</div>
           </div>
           <div>
-            <div className="text-[42px] font-extrabold text-[#2B5AED]">85%</div>
+            <div className="text-2xl md:text-[32px] lg:text-[42px] font-extrabold text-[#2B5AED]">85%</div>
             <div className="text-sm text-[#86909C]">智能客服替代率</div>
           </div>
           <div>
-            <div className="text-[42px] font-extrabold text-[#10B981]">10x</div>
+            <div className="text-2xl md:text-[32px] lg:text-[42px] font-extrabold text-[#10B981]">10x</div>
             <div className="text-sm text-[#86909C]">效率提升</div>
           </div>
           <div>
-            <div className="text-[42px] font-extrabold text-[#FF7D00]">99.9%</div>
+            <div className="text-2xl md:text-[32px] lg:text-[42px] font-extrabold text-[#FF7D00]">99.9%</div>
             <div className="text-sm text-[#86909C]">服务可用率</div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-16 px-20 text-center">
-        <h2 className="text-[32px] font-bold text-[#1D2129] mb-4">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20 text-center">
+        <h2 className="text-xl md:text-[28px] lg:text-[32px] font-bold text-[#1D2129] mb-4">
           开启企业AI新纪元
         </h2>
         <p className="text-[#4E5969] mb-8">

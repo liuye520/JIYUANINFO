@@ -56,12 +56,12 @@ export default function NewsDetailPage() {
       </div>
 
       {/* 文章主体区域 */}
-      <section className="bg-[#F7F8FA] py-[60px] px-20">
-        <div className="flex gap-10">
+      <section className="bg-[#F7F8FA] py-10 md:py-[60px] px-4 md:px-10 lg:px-20">
+        <div className="flex flex-col lg:flex-row gap-6 md:gap-10">
           {/* 左侧文章 */}
-          <div className="flex-1">
+          <div className="flex-1 min-w-0">
             {/* 文章图片 */}
-            <div className="relative rounded-xl overflow-hidden h-[400px] mb-8">
+            <div className="relative rounded-xl overflow-hidden h-[200px] md:h-[300px] lg:h-[400px] mb-8">
               <Image
                 src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-featured.jpg"
                 alt="文章配图"
@@ -71,7 +71,7 @@ export default function NewsDetailPage() {
             </div>
 
             {/* 文章内容 */}
-            <div className="bg-white rounded-xl p-10">
+            <div className="bg-white rounded-xl p-5 md:p-8 lg:p-10">
               <p className="text-[#4E5969] leading-[1.8] mb-8">
                 2024年12月20日，在吉林省科技创新大会上，吉林省济元信息科技有限公司凭借在企业数字化转型领域的持续创新和突出贡献，荣获「2024年度吉林省科技创新企业奖」。这一荣誉是对公司技术实力、创新能力和行业影响力的高度认可。
               </p>
@@ -100,7 +100,7 @@ export default function NewsDetailPage() {
           </div>
 
           {/* 右侧边栏 */}
-          <div className="w-[340px] shrink-0">
+          <div className="w-full lg:w-[340px] shrink-0">
             <h3 className="text-xl font-bold text-[#1D2129] mb-6">相关文章</h3>
             <div className="flex flex-col gap-4">
               {relatedArticles.map((article, index) => (
@@ -135,8 +135,8 @@ export default function NewsDetailPage() {
       </section>
 
       {/* 底部导航栏 */}
-      <section className="bg-white py-10 px-20">
-        <div className="flex justify-between items-center">
+      <section className="bg-white py-8 px-4 md:py-10 md:px-10 lg:px-20">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <Link
             prefetch={false}
             href="/news"

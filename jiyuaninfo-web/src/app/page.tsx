@@ -138,46 +138,46 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="gradient-hero flex flex-col items-center justify-center min-h-[620px] gap-8 px-20 py-[100px]">
-        <div className="flex flex-col items-center gap-6 max-w-[900px]">
-          <div className="flex items-center gap-2 rounded-full bg-white/[0.06] border border-white/[0.12] px-4 py-1.5">
+      <section className="gradient-hero flex flex-col items-center justify-center min-h-[420px] md:min-h-[520px] lg:min-h-[620px] gap-6 md:gap-8 px-4 md:px-10 lg:px-20 py-16 md:py-20 lg:py-[100px]">
+        <div className="flex flex-col items-center gap-4 md:gap-6 max-w-[900px]">
+          <div className="flex items-center gap-2 rounded-full bg-white/[0.06] border border-white/[0.12] px-3 md:px-4 py-1.5">
             <div className="w-2 h-2 rounded-full bg-[#2B5AED]" />
-            <span className="text-[#A0AEC0] text-[13px]">专注数智化转型 · 赋能企业未来</span>
+            <span className="text-[#A0AEC0] text-xs md:text-[13px]">专注数智化转型 · 赋能企业未来</span>
           </div>
-          <h1 className="text-white text-[56px] font-bold leading-[1.2] text-center">
+          <h1 className="text-white text-3xl md:text-[42px] lg:text-[56px] font-bold leading-[1.2] text-center">
             以科技驱动创新
           </h1>
-          <h2 className="text-[56px] font-bold leading-[1.2] text-center gradient-text">
+          <h2 className="text-2xl md:text-[36px] lg:text-[56px] font-bold leading-[1.2] text-center gradient-text">
             为企业提供全方位数字化解决方案
           </h2>
-          <p className="text-[#8892A0] text-lg leading-[1.6] text-center max-w-[700px]">
+          <p className="text-[#8892A0] text-sm md:text-base lg:text-lg leading-[1.6] text-center max-w-[700px]">
             济元信息科技专注于软件开发、APP开发、小程序定制，覆盖智能制造、智慧医疗、智慧教育等20+行业领域
           </p>
-          <div className="flex items-center gap-4 mt-2">
+          <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4 mt-2 w-full sm:w-auto">
             <Link
               prefetch={false}
               href="/contact"
-              className="gradient-primary flex items-center gap-2 text-white text-base font-semibold rounded-md px-9 py-3.5 hover:opacity-90 transition-opacity"
+              className="gradient-primary flex items-center justify-center gap-2 text-white text-sm md:text-base font-semibold rounded-md px-7 md:px-9 py-3 md:py-3.5 hover:opacity-90 transition-opacity w-full sm:w-auto"
             >
               立即咨询
-              <ArrowRight className="w-[18px] h-[18px]" />
+              <ArrowRight className="w-4 h-4 md:w-[18px] md:h-[18px]" />
             </Link>
             <Link
               prefetch={false}
               href="/about"
-              className="flex items-center text-[#A0AEC0] text-base border border-white/20 rounded-md px-9 py-3.5 hover:text-white hover:border-white/40 transition-colors"
+              className="flex items-center justify-center text-[#A0AEC0] text-sm md:text-base border border-white/20 rounded-md px-7 md:px-9 py-3 md:py-3.5 hover:text-white hover:border-white/40 transition-colors w-full sm:w-auto"
             >
               了解更多
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-around w-full max-w-[800px] mt-4">
+        <div className="grid grid-cols-2 md:flex md:items-center md:justify-around w-full max-w-[800px] mt-4 gap-4 md:gap-0">
           {stats.map((s, i) => (
-            <div key={i} className="flex items-center gap-0">
-              {i > 0 && <div className="w-px h-10 bg-white/[0.08] mr-12" />}
+            <div key={i} className="flex items-center justify-center gap-0">
+              {i > 0 && <div className="hidden md:block w-px h-10 bg-white/[0.08] mr-12" />}
               <div className="flex flex-col items-center gap-1">
-                <span className="text-white text-[32px] font-bold">{s.num}</span>
-                <span className="text-[#6B7280] text-sm">{s.label}</span>
+                <span className="text-white text-2xl md:text-[32px] font-bold">{s.num}</span>
+                <span className="text-[#6B7280] text-xs md:text-sm">{s.label}</span>
               </div>
             </div>
           ))}
@@ -185,20 +185,20 @@ export default function HomePage() {
       </section>
 
       {/* Products */}
-      <section className="bg-white py-20 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
-          <span className="text-[#2B5AED] text-sm font-semibold tracking-widest">核心产品服务</span>
-          <h2 className="text-[#1D2129] text-[40px] font-bold text-center">为您提供专业的数字化产品</h2>
-          <p className="text-[#86909C] text-base text-center">从构思到上线，我们为您打造高品质的软件产品</p>
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-3 md:gap-4 mb-8 md:mb-12">
+          <span className="text-[#2B5AED] text-xs md:text-sm font-semibold tracking-widest">核心产品服务</span>
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[40px] font-bold text-center">为您提供专业的数字化产品</h2>
+          <p className="text-[#86909C] text-sm md:text-base text-center">从构思到上线，我们为您打造高品质的软件产品</p>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {products.map((p) => (
             <Link key={p.title} prefetch={false} href={p.href} className="group rounded-xl border border-[#E5E6EB] overflow-hidden bg-white hover:shadow-lg transition-shadow">
-              <div className={`h-[200px] bg-gradient-to-br ${p.gradient} flex items-center justify-center`}>
-                <p.icon className="w-16 h-16 text-white/40" />
+              <div className={`h-[160px] md:h-[200px] bg-gradient-to-br ${p.gradient} flex items-center justify-center`}>
+                <p.icon className="w-12 h-12 md:w-16 md:h-16 text-white/40" />
               </div>
-              <div className="p-7 flex flex-col gap-3">
-                <h3 className="text-[#1D2129] text-[22px] font-bold">{p.title}</h3>
+              <div className="p-5 md:p-7 flex flex-col gap-2 md:gap-3">
+                <h3 className="text-[#1D2129] text-lg md:text-[22px] font-bold">{p.title}</h3>
                 <p className="text-[#86909C] text-sm leading-[1.7]">{p.desc}</p>
                 <span className="text-[#2B5AED] text-sm font-medium flex items-center gap-1.5 group-hover:gap-3 transition-all">
                   了解详情 <ArrowRight className="w-4 h-4" />
@@ -210,43 +210,43 @@ export default function HomePage() {
       </section>
 
       {/* Solutions */}
-      <section className="bg-[#F7F8FA] py-20 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
-          <span className="text-[#2B5AED] text-sm font-semibold tracking-widest">解决方案</span>
-          <h2 className="text-[#1D2129] text-[40px] font-bold text-center">覆盖20+行业领域的数字化解决方案</h2>
-          <p className="text-[#86909C] text-base text-center">深耕行业需求，提供从咨询规划到落地实施的全链路服务</p>
+      <section className="bg-[#F7F8FA] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-3 md:gap-4 mb-8 md:mb-12">
+          <span className="text-[#2B5AED] text-xs md:text-sm font-semibold tracking-widest">解决方案</span>
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[40px] font-bold text-center">覆盖20+行业领域的数字化解决方案</h2>
+          <p className="text-[#86909C] text-sm md:text-base text-center">深耕行业需求，提供从咨询规划到落地实施的全链路服务</p>
         </div>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
           {solutions.map((s, i) => (
             <Link
               prefetch={false}
               key={`${s.label}-${i}`}
               href={s.href}
-              className="flex items-center gap-4 bg-white rounded-[10px] border border-[#E5E6EB] h-20 px-6 hover:shadow-md hover:border-[#2B5AED]/30 transition-all"
+              className="flex items-center gap-3 md:gap-4 bg-white rounded-[10px] border border-[#E5E6EB] h-16 md:h-20 px-4 md:px-6 hover:shadow-md hover:border-[#2B5AED]/30 transition-all"
             >
-              <div className={`w-11 h-11 rounded-[10px] ${s.bg} flex items-center justify-center shrink-0`}>
-                <s.icon className="w-5 h-5 text-[#2B5AED]" />
+              <div className={`w-9 h-9 md:w-11 md:h-11 rounded-[10px] ${s.bg} flex items-center justify-center shrink-0`}>
+                <s.icon className="w-4 h-4 md:w-5 md:h-5 text-[#2B5AED]" />
               </div>
-              <span className="text-[#1D2129] text-[15px] font-medium">{s.label}</span>
+              <span className="text-[#1D2129] text-xs md:text-[15px] font-medium">{s.label}</span>
             </Link>
           ))}
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-[#0D1117] py-20 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
-          <span className="text-[#2B5AED] text-sm font-semibold tracking-widest">为什么选择济元</span>
-          <h2 className="text-white text-[40px] font-bold text-center">值得信赖的数字化合作伙伴</h2>
-          <p className="text-[#8892A0] text-base text-center">专业团队、成熟技术、全程服务，助力企业数字化转型升级</p>
+      <section className="bg-[#0D1117] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-3 md:gap-4 mb-8 md:mb-12">
+          <span className="text-[#2B5AED] text-xs md:text-sm font-semibold tracking-widest">为什么选择济元</span>
+          <h2 className="text-white text-2xl md:text-[32px] lg:text-[40px] font-bold text-center">值得信赖的数字化合作伙伴</h2>
+          <p className="text-[#8892A0] text-sm md:text-base text-center">专业团队、成熟技术、全程服务，助力企业数字化转型升级</p>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {whyUs.map((w) => (
-            <div key={w.title} className="bg-[#161B22] rounded-xl border border-white/[0.06] p-8 flex flex-col gap-5">
-              <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${w.bgGradient} flex items-center justify-center`}>
-                <w.icon className="w-7 h-7" style={{ color: w.color }} />
+            <div key={w.title} className="bg-[#161B22] rounded-xl border border-white/[0.06] p-6 md:p-8 flex flex-col gap-4 md:gap-5">
+              <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${w.bgGradient} flex items-center justify-center`}>
+                <w.icon className="w-6 h-6 md:w-7 md:h-7" style={{ color: w.color }} />
               </div>
-              <h3 className="text-white text-xl font-bold">{w.title}</h3>
+              <h3 className="text-white text-lg md:text-xl font-bold">{w.title}</h3>
               <p className="text-[#8892A0] text-sm leading-[1.7]">{w.desc}</p>
             </div>
           ))}
@@ -254,20 +254,20 @@ export default function HomePage() {
       </section>
 
       {/* Cases */}
-      <section className="bg-white py-20 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
-          <span className="text-[#2B5AED] text-sm font-semibold tracking-widest">客户案例</span>
-          <h2 className="text-[#1D2129] text-[40px] font-bold text-center">他们都选择了济元信息</h2>
-          <p className="text-[#86909C] text-base text-center">覆盖医疗、教育、制造、零售等多个行业的成功案例</p>
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-3 md:gap-4 mb-8 md:mb-12">
+          <span className="text-[#2B5AED] text-xs md:text-sm font-semibold tracking-widest">客户案例</span>
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[40px] font-bold text-center">他们都选择了济元信息</h2>
+          <p className="text-[#86909C] text-sm md:text-base text-center">覆盖医疗、教育、制造、零售等多个行业的成功案例</p>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {cases.map((c) => (
             <Link key={c.title} prefetch={false} href={c.href} className="rounded-xl border border-[#E5E6EB] overflow-hidden bg-white hover:shadow-lg transition-shadow">
-              <div className={`h-[180px] bg-gradient-to-br ${c.gradient} flex items-center justify-center`}>
-                <span className="text-white text-xl font-bold">{c.title}</span>
+              <div className={`h-[150px] md:h-[180px] bg-gradient-to-br ${c.gradient} flex items-center justify-center`}>
+                <span className="text-white text-lg md:text-xl font-bold">{c.title}</span>
               </div>
-              <div className="p-6 flex flex-col gap-2">
-                <h3 className="text-[#1D2129] text-base font-bold">{c.subtitle}</h3>
+              <div className="p-5 md:p-6 flex flex-col gap-2">
+                <h3 className="text-[#1D2129] text-sm md:text-base font-bold">{c.subtitle}</h3>
                 <p className="text-[#86909C] text-[13px] leading-[1.6]">{c.desc}</p>
               </div>
             </Link>
@@ -276,31 +276,31 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="gradient-cta flex flex-col items-center justify-center min-h-[360px] gap-8 px-20 py-20">
-        <h2 className="text-white text-[40px] font-bold text-center">开启您的数字化转型之旅</h2>
-        <p className="text-[#A0AEC0] text-lg text-center max-w-[700px]">
+      <section className="gradient-cta flex flex-col items-center justify-center min-h-[280px] md:min-h-[360px] gap-5 md:gap-8 px-4 md:px-10 lg:px-20 py-12 md:py-16 lg:py-20">
+        <h2 className="text-white text-2xl md:text-[32px] lg:text-[40px] font-bold text-center">开启您的数字化转型之旅</h2>
+        <p className="text-[#A0AEC0] text-sm md:text-base lg:text-lg text-center max-w-[700px]">
           无论您的企业规模如何，我们都能为您提供量身定制的数字化解决方案
         </p>
-        <div className="flex items-center gap-5">
+        <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-5 w-full sm:w-auto">
           <Link
             prefetch={false}
             href="/contact"
-            className="gradient-primary flex items-center gap-2.5 text-white text-base font-semibold rounded-lg px-10 py-4 hover:opacity-90 transition-opacity"
+            className="gradient-primary flex items-center justify-center gap-2.5 text-white text-sm md:text-base font-semibold rounded-lg px-8 md:px-10 py-3 md:py-4 hover:opacity-90 transition-opacity w-full sm:w-auto"
           >
             预约免费咨询
-            <ArrowRight className="w-[18px] h-[18px]" />
+            <ArrowRight className="w-4 h-4 md:w-[18px] md:h-[18px]" />
           </Link>
           <Link
             prefetch={false}
             href="/cases"
-            className="text-[#A0AEC0] text-base border border-white/20 rounded-lg px-10 py-4 hover:text-white hover:border-white/40 transition-colors"
+            className="text-[#A0AEC0] text-sm md:text-base border border-white/20 rounded-lg px-8 md:px-10 py-3 md:py-4 hover:text-white hover:border-white/40 transition-colors text-center w-full sm:w-auto"
           >
             查看更多案例
           </Link>
         </div>
         <div className="flex items-center gap-2">
           <Phone className="w-4 h-4 text-[#6B7280]" />
-          <span className="text-[#6B7280] text-sm">咨询热线：400-xxx-xxxx</span>
+          <span className="text-[#6B7280] text-xs md:text-sm">咨询热线：400-xxx-xxxx</span>
         </div>
       </section>
     </>

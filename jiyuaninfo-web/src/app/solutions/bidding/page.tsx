@@ -81,18 +81,18 @@ export default function BiddingPage() {
       />
 
       {/* Section 1: Features */}
-      <section className="bg-white py-20 px-20">
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-12">
+          <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-8 md:mb-12">
             核心功能
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {features.map((feature) => {
               const Icon = feature.icon;
               return (
                 <div
                   key={feature.title}
-                  className="rounded-xl border border-[#E5E6EB] p-8 hover:shadow-lg transition-shadow"
+                  className="rounded-xl border border-[#E5E6EB] p-5 md:p-8 hover:shadow-lg transition-shadow"
                 >
                   <div
                     className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 ${feature.iconBg}`}
@@ -116,24 +116,24 @@ export default function BiddingPage() {
       </section>
 
       {/* Section 2: Dashboard placeholder */}
-      <section className="bg-[#F7F8FA] py-12 px-20">
+      <section className="bg-[#F7F8FA] py-8 px-4 md:py-12 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-8">
             平台界面预览
           </h2>
-          <div className="relative rounded-xl overflow-hidden h-[420px]">
+          <div className="relative rounded-xl overflow-hidden h-[200px] md:h-[300px] lg:h-[420px]">
             <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-bidding.jpg" alt="智能招投标平台" fill className="object-cover" />
           </div>
         </div>
       </section>
 
       {/* Section 3: Process */}
-      <section className="bg-white py-20 px-20">
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-12">
+          <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-8 md:mb-12">
             招投标全流程管理
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
             {steps.map((step) => (
               <div key={step.num} className="text-center">
                 <div
@@ -155,8 +155,8 @@ export default function BiddingPage() {
       </section>
 
       {/* Section 4: Stats */}
-      <section className="py-16 px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <div
@@ -181,7 +181,7 @@ export default function BiddingPage() {
       </section>
 
       {/* Section 5: CTA */}
-      <section className="bg-white py-16 px-20 text-center">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-[28px] font-bold text-[#1D2129] mb-4">
             立即开启智能招投标之旅

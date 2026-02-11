@@ -80,20 +80,20 @@ export default function SoftwarePage() {
       />
 
       {/* 服务内容 */}
-      <section className="bg-white py-16 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-4 mb-8 md:mb-12">
           <span className="text-[#2B5AED] text-sm font-semibold tracking-widest">
             服务内容
           </span>
-          <h2 className="text-[#1D2129] text-[36px] font-bold text-center">
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[36px] font-bold text-center">
             服务内容
           </h2>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {services.map((s) => (
             <div
               key={s.title}
-              className="rounded-xl border border-[#E5E6EB] p-8 flex flex-col gap-5 hover:shadow-lg transition-shadow"
+              className="rounded-xl border border-[#E5E6EB] p-5 md:p-8 flex flex-col gap-5 hover:shadow-lg transition-shadow"
             >
               <div
                 className={`w-14 h-14 rounded-xl ${s.bg} flex items-center justify-center`}
@@ -108,27 +108,27 @@ export default function SoftwarePage() {
       </section>
 
       {/* 图片区域 */}
-      <section className="bg-[#F7F8FA] px-20 py-10 h-[400px]">
+      <section className="bg-[#F7F8FA] px-4 py-8 md:px-10 md:py-10 lg:px-20 h-[200px] md:h-[300px] lg:h-[400px]">
         <div className="relative rounded-2xl overflow-hidden h-full">
           <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/software-dev.jpg" alt="软件定制开发" fill className="object-cover" />
         </div>
       </section>
 
       {/* 开发流程 */}
-      <section className="bg-[#F7F8FA] py-16 px-20">
-        <div className="flex flex-col items-center gap-4 mb-12">
-          <h2 className="text-[#1D2129] text-[36px] font-bold text-center">
+      <section className="bg-[#F7F8FA] py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-4 mb-8 md:mb-12">
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[36px] font-bold text-center">
             开发流程
           </h2>
         </div>
-        <div className="grid grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
           {steps.map((step) => (
             <div
               key={step.num}
-              className="rounded-xl bg-white border border-[#E5E6EB] p-8 flex flex-col gap-4"
+              className="rounded-xl bg-white border border-[#E5E6EB] p-5 md:p-8 flex flex-col gap-4"
             >
               <span
-                className="text-[40px] font-bold opacity-20"
+                className="text-2xl md:text-[32px] lg:text-[40px] font-bold opacity-20"
                 style={{ color: step.color }}
               >
                 {step.num}

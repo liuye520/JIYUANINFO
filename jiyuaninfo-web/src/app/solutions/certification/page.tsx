@@ -74,18 +74,18 @@ export default function CertificationPage() {
       />
 
       {/* Section 1: Cert types */}
-      <section className="bg-white py-20 px-20">
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-12">
+          <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-8 md:mb-12">
             认证服务体系
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {certTypes.map((cert) => {
               const Icon = cert.icon;
               return (
                 <div
                   key={cert.title}
-                  className="rounded-xl border border-[#E5E6EB] p-8 hover:shadow-lg transition-shadow"
+                  className="rounded-xl border border-[#E5E6EB] p-5 md:p-8 hover:shadow-lg transition-shadow"
                 >
                   <div
                     className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 ${cert.iconBg}`}
@@ -109,21 +109,21 @@ export default function CertificationPage() {
       </section>
 
       {/* Section 2: Image placeholder */}
-      <section className="bg-white py-8 px-20">
+      <section className="bg-white py-8 px-4 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
-          <div className="relative rounded-2xl overflow-hidden h-[360px]">
+          <div className="relative rounded-2xl overflow-hidden h-[200px] md:h-[280px] lg:h-[360px]">
             <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-certification.jpg" alt="企业审核认证" fill className="object-cover" />
           </div>
         </div>
       </section>
 
       {/* Section 3: Process */}
-      <section className="bg-[#F7F8FA] py-20 px-20">
+      <section className="bg-[#F7F8FA] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-12">
+          <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-8 md:mb-12">
             认证服务流程
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
             {steps.map((step) => (
               <div key={step.num} className="text-center">
                 <div
@@ -145,7 +145,7 @@ export default function CertificationPage() {
       </section>
 
       {/* Section 4: CTA */}
-      <section className="bg-white py-16 px-20 text-center">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-[28px] font-bold text-[#1D2129] mb-4">
             开启企业认证之旅

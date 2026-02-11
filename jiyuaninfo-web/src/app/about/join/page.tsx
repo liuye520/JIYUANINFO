@@ -22,8 +22,8 @@ export default function JoinPage() {
       />
 
       {/* Section 1 - Intro */}
-      <section className="bg-white py-20 px-20">
-        <div className="flex flex-row gap-16">
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16">
           <div className="flex-1">
             <span className="rounded-full bg-[#2B5AED]/10 text-[#2B5AED] px-4 py-1.5 text-sm inline-block mb-4">
               人才招募
@@ -35,18 +35,18 @@ export default function JoinPage() {
               济元信息科技始终坚信，人才是企业最宝贵的财富。我们致力于打造一个开放、包容、充满活力的工作环境，让每一位成员都能在这里发挥所长、实现价值。无论你是技术大牛还是行业新人，只要你有梦想、有热情，我们都期待你的加入。
             </p>
           </div>
-          <div className="relative w-[480px] h-[360px] rounded-2xl overflow-hidden shrink-0">
+          <div className="relative w-full md:w-[480px] h-[240px] md:h-[300px] lg:h-[360px] rounded-2xl overflow-hidden shrink-0">
             <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/about-join.jpg" alt="加入我们" fill className="object-cover" />
           </div>
         </div>
       </section>
 
       {/* Section 2 - Benefits */}
-      <section className="bg-[#F7F8FA] py-20 px-20">
-        <div className="text-center mb-12">
+      <section className="bg-[#F7F8FA] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-[#1D2129] mb-3">我们提供</h2>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[
             {
               icon: DollarSign,
@@ -77,7 +77,7 @@ export default function JoinPage() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-8 text-center"
+                className="bg-white rounded-xl p-5 md:p-8 text-center"
               >
                 <div
                   className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5"
@@ -85,7 +85,7 @@ export default function JoinPage() {
                 >
                   <Icon className="w-7 h-7" style={{ color: item.color }} />
                 </div>
-                <h3 className="text-lg font-semibold text-[#1D2129] mb-2">
+                <h3 className="text-base md:text-lg font-semibold text-[#1D2129] mb-2">
                   {item.title}
                 </h3>
                 <p className="text-sm text-[#86909C]">{item.desc}</p>
@@ -96,11 +96,11 @@ export default function JoinPage() {
       </section>
 
       {/* Section 3 - Hot Positions */}
-      <section className="bg-white py-20 px-20">
-        <div className="text-center mb-12">
+      <section className="bg-white py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-[#1D2129] mb-3">热招岗位</h2>
         </div>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {[
             {
               title: "高级Java开发工程师",
@@ -159,11 +159,11 @@ export default function JoinPage() {
       </section>
 
       {/* Section 4 - Work Environment */}
-      <section className="bg-[#0D1117] py-20 px-20">
-        <div className="text-center mb-12">
+      <section className="bg-[#0D1117] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-white mb-3">工作环境</h2>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[
             {
               title: "现代化办公",
@@ -205,11 +205,11 @@ export default function JoinPage() {
       </section>
 
       {/* Section 5 - Employee Life */}
-      <section className="bg-[#F7F8FA] py-20 px-20">
-        <div className="text-center mb-12">
+      <section className="bg-[#F7F8FA] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] font-bold text-[#1D2129] mb-3">员工风采</h2>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[
             {
               title: "团队旅行",

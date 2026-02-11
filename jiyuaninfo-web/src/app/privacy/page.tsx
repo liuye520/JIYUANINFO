@@ -52,10 +52,10 @@ export default function PrivacyPage() {
       />
 
       {/* 内容区 */}
-      <section className="bg-[#F7F8FA] py-[60px] px-[200px]">
-        <div className="flex flex-col gap-10">
+      <section className="bg-[#F7F8FA] py-10 md:py-[60px] px-4 md:px-10 lg:px-20 xl:px-[200px]">
+        <div className="flex flex-col gap-6 md:gap-10">
           {/* 信息卡片 */}
-          <div className="bg-white rounded-xl p-10">
+          <div className="bg-white rounded-xl p-5 md:p-8 lg:p-10">
             <p className="text-[#86909C] text-sm">
               最后更新日期：2025年1月1日
             </p>
@@ -70,7 +70,7 @@ export default function PrivacyPage() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-10 flex flex-col gap-4"
+                className="bg-white rounded-xl p-5 md:p-8 lg:p-10 flex flex-col gap-4"
               >
                 <div className="flex items-center gap-3">
                   <div

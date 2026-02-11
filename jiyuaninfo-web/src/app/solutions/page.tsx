@@ -116,7 +116,7 @@ export default function SolutionsPage() {
       />
 
       {/* Section 1: Image placeholder */}
-      <section className="bg-[#F7F8FA] py-12 px-20">
+      <section className="bg-[#F7F8FA] py-8 px-4 md:py-12 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-4">
             全行业数字化转型服务
@@ -124,21 +124,21 @@ export default function SolutionsPage() {
           <p className="text-[#4E5969] text-center mb-10 max-w-2xl mx-auto">
             覆盖制造、医疗、教育、电商等20+行业，以技术驱动业务创新，助力企业实现全面数字化升级
           </p>
-          <div className="relative rounded-2xl overflow-hidden h-[400px]">
+          <div className="relative rounded-2xl overflow-hidden h-[200px] md:h-[300px] lg:h-[400px]">
             <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/solutions-overview.jpg" alt="数字化解决方案" fill className="object-cover" />
           </div>
         </div>
       </section>
 
       {/* Section 2: Category groups */}
-      <section className="bg-white py-16 px-20">
+      <section className="bg-white py-12 px-4 md:py-16 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto space-y-16">
           {categories.map((category) => (
             <div key={category.title}>
-              <h3 className="text-2xl font-bold text-[#1D2129] mb-8">
+              <h3 className="text-xl md:text-2xl font-bold text-[#1D2129] mb-6 md:mb-8">
                 {category.title}
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                 {category.cards.map((card) => {
                   const Icon = card.icon;
                   return (
