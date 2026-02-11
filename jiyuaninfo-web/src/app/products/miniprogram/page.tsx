@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -11,6 +10,7 @@ import {
   Play,
 } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 
 const advantages = [
   {
@@ -119,9 +119,11 @@ export default function MiniProgramPage() {
             数据驱动营销，精准触达用户
           </h2>
         </div>
-        <div className="relative rounded-xl overflow-hidden h-[200px] md:h-[300px] lg:h-[400px]">
-          <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/miniprogram-dev.jpg" alt="小程序开发" fill className="object-cover" />
-        </div>
+        <ImageCarousel images={[
+          { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/miniprogram-dev.jpg", alt: "小程序开发展示" },
+          { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-miniprogram-2.jpg", alt: "小程序界面设计" },
+          { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-miniprogram-3.jpg", alt: "多平台小程序" },
+        ]} />
       </section>
 
       {/* 服务数据 */}

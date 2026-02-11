@@ -1,5 +1,5 @@
 import PageHero from "@/components/sections/PageHero";
-import Image from "next/image";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 import Link from "next/link";
 import { FileText, ScanSearch, BarChart3 } from "lucide-react";
 
@@ -121,9 +121,11 @@ export default function BiddingPage() {
           <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-8">
             平台界面预览
           </h2>
-          <div className="relative rounded-xl overflow-hidden h-[200px] md:h-[300px] lg:h-[420px]">
-            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-bidding.jpg" alt="智能招投标平台" fill className="object-cover" />
-          </div>
+          <ImageCarousel images={[
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-bidding.jpg", alt: "招投标管理平台" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-bidding-2.jpg", alt: "标书制作服务" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-bidding-3.jpg", alt: "投标策略会议" },
+          ]} />
         </div>
       </section>
 

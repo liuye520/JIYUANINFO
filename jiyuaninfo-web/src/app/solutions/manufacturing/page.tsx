@@ -1,5 +1,5 @@
 import PageHero from "@/components/sections/PageHero";
-import Image from "next/image";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 import Link from "next/link";
 import { Cpu, Wifi, BarChart3, ArrowRight } from "lucide-react";
 
@@ -59,9 +59,11 @@ export default function ManufacturingPage() {
           <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-8">
             智能制造控制中心
           </h2>
-          <div className="relative rounded-xl overflow-hidden h-[240px] md:h-[360px] lg:h-[480px]">
-            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-manufacturing.jpg" alt="智能制造控制中心" fill className="object-cover" />
-          </div>
+          <ImageCarousel images={[
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-manufacturing.jpg", alt: "智能制造控制中心" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-manufacturing-2.jpg", alt: "智能产线实景" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-manufacturing-3.jpg", alt: "工业自动化" },
+          ]} />
         </div>
       </section>
 

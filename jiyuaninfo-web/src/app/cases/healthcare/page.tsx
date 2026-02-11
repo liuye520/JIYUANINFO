@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 import PageHero from "@/components/sections/PageHero";
 import {
   ArrowRight,
@@ -80,9 +80,11 @@ export default function HealthcareCasePage() {
             </div>
           </div>
           <div className="flex-1">
-            <div className="relative rounded-xl overflow-hidden h-[200px] md:h-[300px] w-full">
-              <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/case-detail-healthcare.jpg" alt="智慧医疗案例" fill className="object-cover" />
-            </div>
+            <ImageCarousel images={[
+              { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/case-detail-healthcare.jpg", alt: "智慧医疗案例展示" },
+              { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-healthcare-2.jpg", alt: "远程诊疗系统" },
+              { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-healthcare-3.jpg", alt: "医疗数据平台" },
+            ]} />
           </div>
         </div>
       </section>

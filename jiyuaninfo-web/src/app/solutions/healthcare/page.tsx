@@ -1,5 +1,5 @@
 import PageHero from "@/components/sections/PageHero";
-import Image from "next/image";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 import Link from "next/link";
 import { Monitor, FileText, Video, ArrowRight } from "lucide-react";
 
@@ -62,9 +62,11 @@ export default function HealthcarePage() {
           <p className="text-sm text-[#86909C] text-center mb-8">
             实时监控医院运营数据，AI智能分析辅助临床决策
           </p>
-          <div className="relative rounded-xl overflow-hidden h-[240px] md:h-[360px] lg:h-[480px]">
-            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-healthcare.jpg" alt="智慧医疗数据驾驶舱" fill className="object-cover" />
-          </div>
+          <ImageCarousel images={[
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-healthcare.jpg", alt: "智慧医疗数据驾驶舱" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-healthcare-2.jpg", alt: "远程诊疗平台" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-healthcare-3.jpg", alt: "医疗数据管理" },
+          ]} />
         </div>
       </section>
 

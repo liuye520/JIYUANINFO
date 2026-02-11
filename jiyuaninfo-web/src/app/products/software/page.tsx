@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Building2, Database, Globe, Settings } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 
 const services = [
   {
@@ -107,11 +107,20 @@ export default function SoftwarePage() {
         </div>
       </section>
 
-      {/* 图片区域 */}
-      <section className="bg-[#F7F8FA] px-4 py-8 md:px-10 md:py-10 lg:px-20 h-[200px] md:h-[300px] lg:h-[400px]">
-        <div className="relative rounded-2xl overflow-hidden h-full">
-          <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/software-dev.jpg" alt="软件定制开发" fill className="object-cover" />
+      {/* 开发成果展示 */}
+      <section className="bg-[#F7F8FA] py-12 px-4 md:py-16 md:px-10 lg:px-20">
+        <div className="flex flex-col items-center gap-4 mb-8 md:mb-12">
+          <span className="text-[#2B5AED] text-sm font-semibold tracking-widest">
+            开发成果展示
+          </span>
+          <h2 className="text-[#1D2129] text-2xl md:text-[32px] lg:text-[36px] font-bold text-center">
+            开发成果展示
+          </h2>
         </div>
+        <ImageCarousel images={[
+          { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-software-2.jpg", alt: "软件定制开发流程" },
+          { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-software-3.jpg", alt: "代码开发实景" },
+        ]} />
       </section>
 
       {/* 开发流程 */}

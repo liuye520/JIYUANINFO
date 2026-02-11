@@ -64,7 +64,7 @@ const solutions = [
   { icon: ShoppingCart, label: "直播社交电商", href: "/solutions/ecommerce", bg: "bg-orange-50" },
   { icon: Factory, label: "智能制造工业5.0", href: "/solutions/manufacturing", bg: "bg-indigo-50" },
   { icon: Home, label: "智慧社区", href: "/solutions/community", bg: "bg-emerald-50" },
-  { icon: Building2, label: "系统运维", href: "/solutions", bg: "bg-orange-50" },
+  { icon: Building2, label: "系统运维", href: "/solutions/operations", bg: "bg-orange-50" },
   { icon: Heart, label: "智慧医疗", href: "/solutions/healthcare", bg: "bg-red-50" },
   { icon: Utensils, label: "餐饮策划", href: "/solutions", bg: "bg-orange-50" },
   { icon: GraduationCap, label: "智慧教育", href: "/solutions/education", bg: "bg-indigo-50" },

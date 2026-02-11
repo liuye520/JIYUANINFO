@@ -46,6 +46,7 @@ const row1: SitemapCard[] = [
       { label: "企业AI大模型", href: "/solutions/ai" },
       { label: "招投标方案", href: "/solutions/bidding" },
       { label: "企业审核认证", href: "/solutions/certification" },
+      { label: "系统运维", href: "/solutions/operations" },
     ],
   },
 ];

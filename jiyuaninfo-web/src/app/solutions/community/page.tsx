@@ -1,5 +1,5 @@
 import PageHero from "@/components/sections/PageHero";
-import Image from "next/image";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 import Link from "next/link";
 import { Shield, Home, Wifi, ArrowRight } from "lucide-react";
 
@@ -62,9 +62,11 @@ export default function CommunityPage() {
           <p className="text-sm text-[#86909C] text-center mb-8">
             全景式社区运营监控，实时感知社区动态，数据驱动精细化管理
           </p>
-          <div className="relative rounded-xl overflow-hidden h-[240px] md:h-[360px] lg:h-[480px]">
-            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-community.jpg" alt="智慧社区管理平台" fill className="object-cover" />
-          </div>
+          <ImageCarousel images={[
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-community.jpg", alt: "智慧社区管理平台" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-community-2.jpg", alt: "智慧楼宇管理" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-community-3.jpg", alt: "社区服务平台" },
+          ]} />
         </div>
       </section>
 

@@ -29,3 +29,6 @@ yarn-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local image downloads (served from OSS CDN)
+jiyuaninfo-web/public/images/

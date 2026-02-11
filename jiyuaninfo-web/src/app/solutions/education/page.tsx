@@ -1,5 +1,5 @@
 import PageHero from "@/components/sections/PageHero";
-import Image from "next/image";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 import Link from "next/link";
 import { BookOpen, BarChart3, Users, ArrowRight } from "lucide-react";
 
@@ -62,9 +62,11 @@ export default function EducationPage() {
           <p className="text-sm text-[#86909C] text-center mb-8">
             全面掌握教学质量数据，驱动教育决策科学化
           </p>
-          <div className="relative rounded-xl overflow-hidden h-[240px] md:h-[360px] lg:h-[480px]">
-            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-education.jpg" alt="智慧教育数据中心" fill className="object-cover" />
-          </div>
+          <ImageCarousel images={[
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-education.jpg", alt: "智慧教育平台" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-education-2.jpg", alt: "在线教学系统" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-education-3.jpg", alt: "互动课堂" },
+          ]} />
         </div>
       </section>
 

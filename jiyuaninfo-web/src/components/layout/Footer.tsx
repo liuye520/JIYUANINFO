@@ -19,7 +19,7 @@ const footerColumns = [
       { label: "智慧医疗", href: "/solutions/healthcare" },
       { label: "智慧教育", href: "/solutions/education" },
       { label: "直播电商", href: "/solutions/ecommerce" },
-      { label: "安防监控", href: "/solutions" },
+      { label: "系统运维", href: "/solutions/operations" },
     ],
   },
   {

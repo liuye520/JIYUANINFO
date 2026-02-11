@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ShoppingBag, Video, Briefcase } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 
 const processSteps = [
   {
@@ -123,9 +123,11 @@ export default function AppPage() {
             覆盖多场景的移动端技术体系
           </h2>
         </div>
-        <div className="relative rounded-xl overflow-hidden h-[200px] md:h-[300px] lg:h-[400px]">
-          <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/app-dev.jpg" alt="APP应用开发" fill className="object-cover" />
-        </div>
+        <ImageCarousel images={[
+          { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/app-dev.jpg", alt: "APP开发展示" },
+          { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-app-2.jpg", alt: "移动应用界面" },
+          { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-app-3.jpg", alt: "APP开发流程" },
+        ]} />
       </section>
 
       {/* 项目数据 */}

@@ -1,5 +1,5 @@
 import PageHero from "@/components/sections/PageHero";
-import Image from "next/image";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 import Link from "next/link";
 import { ShieldCheck, Award, Zap } from "lucide-react";
 
@@ -111,9 +111,11 @@ export default function CertificationPage() {
       {/* Section 2: Image placeholder */}
       <section className="bg-white py-8 px-4 md:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
-          <div className="relative rounded-2xl overflow-hidden h-[200px] md:h-[280px] lg:h-[360px]">
-            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-certification.jpg" alt="企业审核认证" fill className="object-cover" />
-          </div>
+          <ImageCarousel images={[
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-certification.jpg", alt: "企业认证服务" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-certification-2.jpg", alt: "资质认证流程" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-certification-3.jpg", alt: "专业认证团队" },
+          ]} />
         </div>
       </section>
 

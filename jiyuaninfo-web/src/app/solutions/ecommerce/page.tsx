@@ -1,5 +1,5 @@
 import PageHero from "@/components/sections/PageHero";
-import Image from "next/image";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 import Link from "next/link";
 import { Video, Users, BarChart3 } from "lucide-react";
 
@@ -88,9 +88,11 @@ export default function EcommercePage() {
           <h2 className="text-[28px] font-bold text-[#1D2129] text-center mb-8">
             营销数据大屏
           </h2>
-          <div className="relative rounded-xl overflow-hidden h-[200px] md:h-[300px] lg:h-[420px]">
-            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-ecommerce.jpg" alt="直播电商平台" fill className="object-cover" />
-          </div>
+          <ImageCarousel images={[
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-ecommerce.jpg", alt: "直播电商平台" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-ecommerce-2.jpg", alt: "电商运营管理" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-ecommerce-3.jpg", alt: "在线支付系统" },
+          ]} />
         </div>
       </section>
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 import PageHero from "@/components/sections/PageHero";
 import {
   ArrowRight,
@@ -80,9 +80,11 @@ export default function EcommerceCasePage() {
             </div>
           </div>
           <div className="flex-1">
-            <div className="relative rounded-xl overflow-hidden h-[200px] md:h-[300px] w-full">
-              <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/case-detail-ecommerce.jpg" alt="直播电商案例" fill className="object-cover" />
-            </div>
+            <ImageCarousel images={[
+              { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/case-detail-ecommerce.jpg", alt: "直播电商案例展示" },
+              { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-ecommerce-2.jpg", alt: "电商运营后台" },
+              { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-ecommerce-3.jpg", alt: "在线交易平台" },
+            ]} />
           </div>
         </div>
       </section>

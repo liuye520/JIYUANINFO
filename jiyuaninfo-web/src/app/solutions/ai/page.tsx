@@ -1,5 +1,5 @@
 import PageHero from "@/components/sections/PageHero";
-import Image from "next/image";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 import Link from "next/link";
 import { Brain, Server, Bot, ArrowRight } from "lucide-react";
 
@@ -62,9 +62,11 @@ export default function AIPage() {
           <p className="text-sm text-[#86909C] text-center mb-8">
             统一管理模型训练、推理、监控全生命周期，一站式AI运营中心
           </p>
-          <div className="relative rounded-xl overflow-hidden h-[240px] md:h-[360px] lg:h-[480px]">
-            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-ai.jpg" alt="AI大模型管理平台" fill className="object-cover" />
-          </div>
+          <ImageCarousel images={[
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-ai.jpg", alt: "企业AI大模型" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-ai-2.jpg", alt: "AI训练平台" },
+            { src: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/carousel-ai-3.jpg", alt: "智能体开发" },
+          ]} />
         </div>
       </section>
 

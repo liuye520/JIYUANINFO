@@ -39,7 +39,7 @@ const categories = [
         iconBg: "#FFF7ED",
         title: "系统运维",
         desc: "7×24小时运维监控、故障排查、系统优化与安全保障",
-        href: "/solutions",
+        href: "/solutions/operations",
       },
     ],
   },
