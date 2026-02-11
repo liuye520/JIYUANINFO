@@ -125,7 +125,7 @@ export default function SolutionsPage() {
             覆盖制造、医疗、教育、电商等20+行业，以技术驱动业务创新，助力企业实现全面数字化升级
           </p>
           <div className="relative rounded-2xl overflow-hidden h-[400px]">
-            <Image src="/images/solutions-overview.jpg" alt="数字化解决方案" fill className="object-cover" />
+            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/solutions-overview.jpg" alt="数字化解决方案" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -162,6 +162,7 @@ export default function SolutionsPage() {
                         {card.desc}
                       </p>
                       <Link
+                        prefetch={false}
                         href={card.href}
                         className="text-sm text-[#2B5AED] font-medium hover:underline"
                       >

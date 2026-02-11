@@ -10,7 +10,7 @@ const cases = [
     title: "某三甲医院 · 智慧医疗管理系统",
     desc: "实现患者信息管理、在线预约挂号、远程诊疗等功能一体化",
     href: "/cases/healthcare",
-    image: "/images/case-healthcare.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/case-healthcare.jpg",
   },
   {
     gradient: "from-[#553C9A] to-[#7B61FF]",
@@ -18,7 +18,7 @@ const cases = [
     title: "某头部MCN · 全域直播营销平台",
     desc: "构建全域直播营销体系，GMV实现500%爆发式增长",
     href: "/cases/ecommerce",
-    image: "/images/case-ecommerce.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/case-ecommerce.jpg",
   },
   {
     gradient: "from-[#065F46] to-[#10B981]",
@@ -26,7 +26,7 @@ const cases = [
     title: "某汽车零部件集团 · 工业5.0智能产线",
     desc: "数字孪生驱动工厂智能化转型，产能提升25%",
     href: "/cases/manufacturing",
-    image: "/images/case-manufacturing.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/case-manufacturing.jpg",
   },
   {
     gradient: "from-[#1E3A5F] to-[#7B61FF]",
@@ -34,7 +34,7 @@ const cases = [
     title: "某省级重点中学 · 智慧校园建设",
     desc: "AI赋能精准教学，学生成绩提升40%",
     href: "/cases/education",
-    image: "/images/case-education.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/case-education.jpg",
   },
   {
     gradient: "from-[#065F46] to-[#10B981]",
@@ -42,7 +42,7 @@ const cases = [
     title: "某大型社区 · 智慧物业管理平台",
     desc: "IoT+AI赋能社区治理，居民满意度提升至95%",
     href: "/cases/community",
-    image: "/images/case-community.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/case-community.jpg",
   },
   {
     gradient: "from-[#553C9A] to-[#7B61FF]",
@@ -50,7 +50,7 @@ const cases = [
     title: "某金融集团 · 企业AI大模型落地",
     desc: "私有化部署行业大模型，智能客服替代率85%",
     href: "/cases/ai",
-    image: "/images/case-ai.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/case-ai.jpg",
   },
 ];
 
@@ -83,6 +83,7 @@ export default function CasesPage() {
           <div className="grid grid-cols-2 gap-6">
             {cases.map((item) => (
               <Link
+                prefetch={false}
                 key={item.href}
                 href={item.href}
                 className="rounded-xl border border-[#E5E6EB] overflow-hidden bg-white hover:shadow-lg transition-shadow"
@@ -127,6 +128,7 @@ export default function CasesPage() {
             无论您的企业规模大小，我们都能为您提供专业的数字化解决方案
           </p>
           <Link
+            prefetch={false}
             href="/contact"
             className="inline-flex items-center gap-2 bg-[#2B5AED] text-white px-8 py-3 rounded-lg hover:bg-[#1A4ADB] transition-colors font-medium"
           >

@@ -110,7 +110,7 @@ export default function SoftwarePage() {
       {/* 图片区域 */}
       <section className="bg-[#F7F8FA] px-20 py-10 h-[400px]">
         <div className="relative rounded-2xl overflow-hidden h-full">
-          <Image src="/images/software-dev.jpg" alt="软件定制开发" fill className="object-cover" />
+          <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/software-dev.jpg" alt="软件定制开发" fill className="object-cover" />
         </div>
       </section>
 

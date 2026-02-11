@@ -89,7 +89,7 @@ export default function EcommercePage() {
             营销数据大屏
           </h2>
           <div className="relative rounded-xl overflow-hidden h-[420px]">
-            <Image src="/images/sol-ecommerce.jpg" alt="直播电商平台" fill className="object-cover" />
+            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-ecommerce.jpg" alt="直播电商平台" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -131,12 +131,14 @@ export default function EcommercePage() {
           </p>
           <div className="flex items-center justify-center gap-4">
             <Link
+              prefetch={false}
               href="/contact"
               className="px-8 py-3 rounded-lg text-white font-medium bg-gradient-to-r from-[#2B5AED] to-[#7B61FF] hover:opacity-90 transition-opacity"
             >
               免费试用
             </Link>
             <Link
+              prefetch={false}
               href="/contact"
               className="px-8 py-3 rounded-lg font-medium border border-[#2B5AED] text-[#2B5AED] hover:bg-[#2B5AED]/5 transition-colors"
             >

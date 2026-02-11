@@ -120,7 +120,7 @@ export default function MiniProgramPage() {
           </h2>
         </div>
         <div className="relative rounded-xl overflow-hidden h-[400px]">
-          <Image src="/images/miniprogram-dev.jpg" alt="小程序开发" fill className="object-cover" />
+          <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/miniprogram-dev.jpg" alt="小程序开发" fill className="object-cover" />
         </div>
       </section>
 
@@ -190,6 +190,7 @@ export default function MiniProgramPage() {
             多平台小程序一站式开发，从设计到上线全程陪伴
           </p>
           <Link
+            prefetch={false}
             href="/contact"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#10B981] to-[#00D4FF] text-white text-base font-semibold rounded-lg px-9 py-3.5 hover:opacity-90 transition-opacity"
           >

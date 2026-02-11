@@ -63,7 +63,7 @@ export default function CommunityPage() {
             全景式社区运营监控，实时感知社区动态，数据驱动精细化管理
           </p>
           <div className="relative rounded-xl overflow-hidden h-[480px]">
-            <Image src="/images/sol-community.jpg" alt="智慧社区管理平台" fill className="object-cover" />
+            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-community.jpg" alt="智慧社区管理平台" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -103,6 +103,7 @@ export default function CommunityPage() {
         </p>
         <div className="flex items-center justify-center gap-4">
           <Link
+            prefetch={false}
             href="/contact"
             className="gradient-primary flex items-center gap-2 text-white text-base font-semibold rounded-lg px-8 py-3.5 hover:opacity-90 transition-opacity"
           >
@@ -110,6 +111,7 @@ export default function CommunityPage() {
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
+            prefetch={false}
             href="/solutions"
             className="border border-[#E5E6EB] text-[#4E5969] text-base font-semibold rounded-lg px-8 py-3.5 hover:border-[#2B5AED] hover:text-[#2B5AED] transition-colors"
           >

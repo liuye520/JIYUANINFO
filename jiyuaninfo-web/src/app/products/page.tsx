@@ -17,7 +17,7 @@ const products = [
     ],
     buttonGradient: "from-[#2B5AED] to-[#5B3CF5]",
     href: "/products/software",
-    image: "/images/products-slide-1.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/products-slide-1.jpg",
     overlayGradient: "from-[#2B5AED]/60 to-[#00D4FF]/40",
   },
   {
@@ -33,7 +33,7 @@ const products = [
     ],
     buttonGradient: "from-[#7B61FF] to-[#FF6B9D]",
     href: "/products/app",
-    image: "/images/products-slide-2.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/products-slide-2.jpg",
     overlayGradient: "from-[#7B61FF]/60 to-[#FF6B9D]/40",
   },
   {
@@ -49,7 +49,7 @@ const products = [
     ],
     buttonGradient: "from-[#10B981] to-[#00D4FF]",
     href: "/products/miniprogram",
-    image: "/images/products-slide-3.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/products-slide-3.jpg",
     overlayGradient: "from-[#00B42A]/60 to-[#00D4FF]/40",
   },
 ];
@@ -108,6 +108,7 @@ export default function ProductsPage() {
                     ))}
                   </div>
                   <Link
+                    prefetch={false}
                     href={product.href}
                     className={`inline-flex items-center gap-2 self-start bg-gradient-to-r ${product.buttonGradient} text-white text-sm font-semibold rounded-lg px-7 py-3 hover:opacity-90 transition-opacity`}
                   >

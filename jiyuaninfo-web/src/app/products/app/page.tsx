@@ -124,7 +124,7 @@ export default function AppPage() {
           </h2>
         </div>
         <div className="relative rounded-xl overflow-hidden h-[400px]">
-          <Image src="/images/app-dev.jpg" alt="APP应用开发" fill className="object-cover" />
+          <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/app-dev.jpg" alt="APP应用开发" fill className="object-cover" />
         </div>
       </section>
 
@@ -194,6 +194,7 @@ export default function AppPage() {
             专业团队为您量身打造高品质APP，从需求到上线全程无忧
           </p>
           <Link
+            prefetch={false}
             href="/contact"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7B61FF] to-[#2B5AED] text-white text-base font-semibold rounded-lg px-9 py-3.5 hover:opacity-90 transition-opacity"
           >

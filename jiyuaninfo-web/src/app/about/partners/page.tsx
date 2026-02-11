@@ -40,7 +40,7 @@ export default function PartnersPage() {
             </p>
           </div>
           <div className="relative w-[480px] h-[360px] rounded-2xl overflow-hidden shrink-0">
-            <Image src="/images/about-partners.jpg" alt="合作伙伴" fill className="object-cover" />
+            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/about-partners.jpg" alt="合作伙伴" fill className="object-cover" />
           </div>
         </div>
       </section>

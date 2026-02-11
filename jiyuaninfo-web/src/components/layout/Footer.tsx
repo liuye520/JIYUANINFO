@@ -41,7 +41,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="w-80 shrink-0 flex flex-col gap-4">
           <div className="flex items-center gap-2.5">
-            <Image src="/images/logo-icon.jpg" alt="济元信息" width={32} height={32} className="h-8 w-8 rounded-md" />
+            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/logo-icon.jpg" alt="济元信息" width={32} height={32} className="h-8 w-8 rounded-md" />
             <span className="text-white text-base font-bold">济元信息</span>
           </div>
           <p className="text-[#6B7280] text-[13px] leading-[1.7]">
@@ -57,6 +57,7 @@ export default function Footer() {
               <Link
                 key={link.label}
                 href={link.href}
+                prefetch={false}
                 className="text-[#6B7280] text-[13px] hover:text-white transition-colors"
               >
                 {link.label}
@@ -73,17 +74,17 @@ export default function Footer() {
       <div className="flex items-center justify-between">
         <span className="text-[#4B5563] text-xs flex items-center gap-1">
           Copyright © 2025 吉林省济元信息科技有限公司
-          <Image src="/images/beian-icon.png" alt="备案" width={14} height={14} className="inline-block" />
+          <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/beian-icon.png" alt="备案" width={14} height={14} className="inline-block" />
           吉ICP备2022006502号-1
         </span>
         <div className="flex items-center gap-6">
-          <Link href="/privacy" className="text-[#4B5563] text-xs hover:text-white transition-colors">
+          <Link href="/privacy" prefetch={false} className="text-[#4B5563] text-xs hover:text-white transition-colors">
             隐私政策
           </Link>
-          <Link href="/terms" className="text-[#4B5563] text-xs hover:text-white transition-colors">
+          <Link href="/terms" prefetch={false} className="text-[#4B5563] text-xs hover:text-white transition-colors">
             用户协议
           </Link>
-          <Link href="/sitemap-page" className="text-[#4B5563] text-xs hover:text-white transition-colors">
+          <Link href="/sitemap-page" prefetch={false} className="text-[#4B5563] text-xs hover:text-white transition-colors">
             网站地图
           </Link>
         </div>

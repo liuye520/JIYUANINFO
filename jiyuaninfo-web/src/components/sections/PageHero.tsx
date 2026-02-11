@@ -20,7 +20,7 @@ export default function PageHero({ breadcrumbs, title, subtitle }: PageHeroProps
           <span key={i} className="flex items-center gap-2">
             {i > 0 && <ChevronRight className="w-3.5 h-3.5 text-[#4B5563]" />}
             {item.href ? (
-              <Link href={item.href} className="text-[#6B7280] text-sm hover:text-white transition-colors">
+              <Link prefetch={false} href={item.href} className="text-[#6B7280] text-sm hover:text-white transition-colors">
                 {item.label}
               </Link>
             ) : (

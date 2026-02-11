@@ -157,7 +157,7 @@ export default function ContactPage() {
       <section className="bg-[#F7F8FA] pb-20 px-20">
         <h2 className="text-[28px] font-bold text-[#1D2129] mb-6">公司位置</h2>
         <div className="relative rounded-xl overflow-hidden h-[300px]">
-          <Image src="/images/contact-location.jpg" alt="公司位置" fill className="object-cover" />
+          <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/contact-location.jpg" alt="公司位置" fill className="object-cover" />
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
             <div className="text-center">
               <MapPin className="w-10 h-10 text-white mx-auto mb-3" />

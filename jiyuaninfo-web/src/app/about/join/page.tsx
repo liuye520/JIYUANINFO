@@ -36,7 +36,7 @@ export default function JoinPage() {
             </p>
           </div>
           <div className="relative w-[480px] h-[360px] rounded-2xl overflow-hidden shrink-0">
-            <Image src="/images/about-join.jpg" alt="加入我们" fill className="object-cover" />
+            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/about-join.jpg" alt="加入我们" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -168,22 +168,22 @@ export default function JoinPage() {
             {
               title: "现代化办公",
               desc: "宽敞明亮的办公空间，配备专业开发设备",
-              image: "/images/env-office.jpg",
+              image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/env-office.jpg",
             },
             {
               title: "休闲区域",
               desc: "咖啡吧、游戏区，工作之余放松身心",
-              image: "/images/env-lounge.jpg",
+              image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/env-lounge.jpg",
             },
             {
               title: "学习空间",
               desc: "图书角、会议室，为持续学习创造条件",
-              image: "/images/env-library.jpg",
+              image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/env-library.jpg",
             },
             {
               title: "娱乐设施",
               desc: "健身房、台球室，丰富员工生活",
-              image: "/images/env-gym.jpg",
+              image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/env-gym.jpg",
             },
           ].map((item, index) => (
             <div
@@ -214,22 +214,22 @@ export default function JoinPage() {
             {
               title: "团队旅行",
               desc: "年度团队旅行，拓展视野增进感情",
-              image: "/images/life-travel.jpg",
+              image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/life-travel.jpg",
             },
             {
               title: "技术竞赛",
               desc: "定期Hackathon，激发创新潜能",
-              image: "/images/life-hackathon.jpg",
+              image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/life-hackathon.jpg",
             },
             {
               title: "节日活动",
               desc: "丰富多彩的节日庆祝活动",
-              image: "/images/life-holiday.jpg",
+              image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/life-holiday.jpg",
             },
             {
               title: "公益活动",
               desc: "回馈社会，传递温暖",
-              image: "/images/life-charity.jpg",
+              image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/life-charity.jpg",
             },
           ].map((item, index) => (
             <div key={index} className="bg-white rounded-xl overflow-hidden">

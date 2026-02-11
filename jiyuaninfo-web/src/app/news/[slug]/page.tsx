@@ -7,19 +7,19 @@ const relatedArticles = [
   {
     title: "人工智能在企业数字化转型中的应用趋势",
     date: "2024-12-15",
-    image: "/images/news-1.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-1.jpg",
     slug: "1",
   },
   {
     title: "微服务架构最佳实践",
     date: "2024-12-10",
-    image: "/images/news-2.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-2.jpg",
     slug: "2",
   },
   {
     title: "大模型微调实战",
     date: "2024-11-28",
-    image: "/images/news-3.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-3.jpg",
     slug: "3",
   },
 ];
@@ -63,7 +63,7 @@ export default function NewsDetailPage() {
             {/* 文章图片 */}
             <div className="relative rounded-xl overflow-hidden h-[400px] mb-8">
               <Image
-                src="/images/news-featured.jpg"
+                src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-featured.jpg"
                 alt="文章配图"
                 fill
                 className="object-cover"
@@ -105,6 +105,7 @@ export default function NewsDetailPage() {
             <div className="flex flex-col gap-4">
               {relatedArticles.map((article, index) => (
                 <Link
+                  prefetch={false}
                   key={index}
                   href={`/news/${article.slug}`}
                   className="bg-white rounded-xl overflow-hidden hover:shadow-lg transition-shadow"
@@ -137,6 +138,7 @@ export default function NewsDetailPage() {
       <section className="bg-white py-10 px-20">
         <div className="flex justify-between items-center">
           <Link
+            prefetch={false}
             href="/news"
             className="flex items-center gap-2 text-[#4E5969] hover:text-[#2B5AED] transition-colors font-medium"
           >
@@ -144,6 +146,7 @@ export default function NewsDetailPage() {
             返回资讯列表
           </Link>
           <Link
+            prefetch={false}
             href="/contact"
             className="inline-flex items-center gap-2 gradient-primary text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
           >

@@ -60,7 +60,7 @@ export default function ManufacturingPage() {
             智能制造控制中心
           </h2>
           <div className="relative rounded-xl overflow-hidden h-[480px]">
-            <Image src="/images/sol-manufacturing.jpg" alt="智能制造控制中心" fill className="object-cover" />
+            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-manufacturing.jpg" alt="智能制造控制中心" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -100,6 +100,7 @@ export default function ManufacturingPage() {
         </p>
         <div className="flex items-center justify-center gap-4">
           <Link
+            prefetch={false}
             href="/contact"
             className="gradient-primary flex items-center gap-2 text-white text-base font-semibold rounded-lg px-8 py-3.5 hover:opacity-90 transition-opacity"
           >
@@ -107,6 +108,7 @@ export default function ManufacturingPage() {
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
+            prefetch={false}
             href="/solutions"
             className="border border-[#E5E6EB] text-[#4E5969] text-base font-semibold rounded-lg px-8 py-3.5 hover:border-[#2B5AED] hover:text-[#2B5AED] transition-colors"
           >

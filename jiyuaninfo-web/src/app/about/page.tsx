@@ -45,7 +45,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="relative w-[480px] h-[360px] rounded-2xl overflow-hidden shrink-0">
-            <Image src="/images/about-company.jpg" alt="济元信息科技" fill className="object-cover" />
+            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/about-company.jpg" alt="济元信息科技" fill className="object-cover" />
           </div>
         </div>
       </section>

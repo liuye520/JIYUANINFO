@@ -63,7 +63,7 @@ export default function AIPage() {
             统一管理模型训练、推理、监控全生命周期，一站式AI运营中心
           </p>
           <div className="relative rounded-xl overflow-hidden h-[480px]">
-            <Image src="/images/sol-ai.jpg" alt="AI大模型管理平台" fill className="object-cover" />
+            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/sol-ai.jpg" alt="AI大模型管理平台" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -103,6 +103,7 @@ export default function AIPage() {
         </p>
         <div className="flex items-center justify-center gap-4">
           <Link
+            prefetch={false}
             href="/contact"
             className="gradient-primary flex items-center gap-2 text-white text-base font-semibold rounded-lg px-8 py-3.5 hover:opacity-90 transition-opacity"
           >
@@ -110,6 +111,7 @@ export default function AIPage() {
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
+            prefetch={false}
             href="/solutions"
             className="border border-[#E5E6EB] text-[#4E5969] text-base font-semibold rounded-lg px-8 py-3.5 hover:border-[#2B5AED] hover:text-[#2B5AED] transition-colors"
           >

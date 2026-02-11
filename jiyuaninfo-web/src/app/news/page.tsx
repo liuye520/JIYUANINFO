@@ -14,42 +14,42 @@ const newsCards = [
     title: "人工智能在企业数字化转型中的应用趋势",
     desc: "随着AI技术的快速发展，越来越多的企业开始将人工智能应用于数字化转型的各个环节，从智能客服到数据分析，AI正在重塑企业运营模式。",
     date: "2024-12-15",
-    image: "/images/news-1.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-1.jpg",
   },
   {
     tag: "技术分享",
     title: "微服务架构最佳实践：从单体到分布式",
     desc: "本文详细介绍了企业从单体架构向微服务架构迁移的最佳实践，包括服务拆分策略、通信机制选择以及运维监控方案。",
     date: "2024-12-10",
-    image: "/images/news-2.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-2.jpg",
   },
   {
     tag: "公司动态",
     title: "济元信息与某三甲医院达成战略合作",
     desc: "济元信息将为该医院提供全面的智慧医疗解决方案，涵盖电子病历、远程诊疗、智能导诊等多个核心模块。",
     date: "2024-12-05",
-    image: "/images/news-3.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-3.jpg",
   },
   {
     tag: "技术分享",
     title: "大模型微调实战：企业级RAG系统搭建",
     desc: "深入解析如何基于开源大模型搭建企业级RAG系统，实现知识库的智能检索与精准问答。",
     date: "2024-11-28",
-    image: "/images/news-4.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-4.jpg",
   },
   {
     tag: "行业洞察",
     title: "2024智能制造行业白皮书发布",
     desc: "白皮书全面分析了智能制造行业的发展现状、技术趋势和未来方向，为企业数字化转型提供参考。",
     date: "2024-11-20",
-    image: "/images/news-5.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-5.jpg",
   },
   {
     tag: "公司动态",
     title: "济元信息参加2024中国数字经济大会",
     desc: "济元信息受邀参加2024中国数字经济大会，展示了公司在AI大模型、智能体开发等领域的最新成果。",
     date: "2024-11-15",
-    image: "/images/news-6.jpg",
+    image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-6.jpg",
   },
 ];
 
@@ -107,7 +107,7 @@ export default function NewsPage() {
         <div className="bg-white rounded-xl overflow-hidden mb-10">
           <div className="relative h-[360px]">
             <Image
-              src="/images/news-featured.jpg"
+              src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/news-featured.jpg"
               alt="精选文章"
               fill
               className="object-cover"
@@ -146,6 +146,7 @@ export default function NewsPage() {
         <div className="grid grid-cols-3 gap-6">
           {filteredCards.map((card, index) => (
             <Link
+              prefetch={false}
               key={index}
               href={`/news/${index + 1}`}
               className="bg-white rounded-xl overflow-hidden hover:shadow-lg transition-shadow"
@@ -195,6 +196,7 @@ export default function NewsPage() {
           关注济元信息，获取最新行业动态与技术趋势
         </p>
         <Link
+          prefetch={false}
           href="/contact"
           className="inline-flex items-center gap-2 gradient-primary text-white px-8 py-3.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
         >

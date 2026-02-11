@@ -40,7 +40,7 @@ export default function TeamPage() {
             </p>
           </div>
           <div className="relative w-[480px] h-[360px] rounded-2xl overflow-hidden shrink-0">
-            <Image src="/images/about-team.jpg" alt="团队成员" fill className="object-cover" />
+            <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/about-team.jpg" alt="团队成员" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -214,22 +214,22 @@ export default function TeamPage() {
             {
               title: "下午茶时光",
               desc: "每周五下午茶，轻松交流分享",
-              image: "/images/team-tea.jpg",
+              image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/team-tea.jpg",
             },
             {
               title: "技术沙龙",
               desc: "定期技术分享会，共同学习成长",
-              image: "/images/team-salon.jpg",
+              image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/team-salon.jpg",
             },
             {
               title: "团建活动",
               desc: "季度团建，增强团队凝聚力",
-              image: "/images/team-building.jpg",
+              image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/team-building.jpg",
             },
             {
               title: "关怀计划",
               desc: "生日关怀、节日福利，温暖每一位伙伴",
-              image: "/images/team-care.jpg",
+              image: "https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/team-care.jpg",
             },
           ].map((item, index) => (
             <div key={index} className="bg-white rounded-xl overflow-hidden">

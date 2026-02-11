@@ -155,6 +155,7 @@ export default function HomePage() {
           </p>
           <div className="flex items-center gap-4 mt-2">
             <Link
+              prefetch={false}
               href="/contact"
               className="gradient-primary flex items-center gap-2 text-white text-base font-semibold rounded-md px-9 py-3.5 hover:opacity-90 transition-opacity"
             >
@@ -162,6 +163,7 @@ export default function HomePage() {
               <ArrowRight className="w-[18px] h-[18px]" />
             </Link>
             <Link
+              prefetch={false}
               href="/about"
               className="flex items-center text-[#A0AEC0] text-base border border-white/20 rounded-md px-9 py-3.5 hover:text-white hover:border-white/40 transition-colors"
             >
@@ -191,7 +193,7 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-3 gap-6">
           {products.map((p) => (
-            <Link key={p.title} href={p.href} className="group rounded-xl border border-[#E5E6EB] overflow-hidden bg-white hover:shadow-lg transition-shadow">
+            <Link key={p.title} prefetch={false} href={p.href} className="group rounded-xl border border-[#E5E6EB] overflow-hidden bg-white hover:shadow-lg transition-shadow">
               <div className={`h-[200px] bg-gradient-to-br ${p.gradient} flex items-center justify-center`}>
                 <p.icon className="w-16 h-16 text-white/40" />
               </div>
@@ -217,6 +219,7 @@ export default function HomePage() {
         <div className="grid grid-cols-3 gap-5">
           {solutions.map((s, i) => (
             <Link
+              prefetch={false}
               key={`${s.label}-${i}`}
               href={s.href}
               className="flex items-center gap-4 bg-white rounded-[10px] border border-[#E5E6EB] h-20 px-6 hover:shadow-md hover:border-[#2B5AED]/30 transition-all"
@@ -259,7 +262,7 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-3 gap-6">
           {cases.map((c) => (
-            <Link key={c.title} href={c.href} className="rounded-xl border border-[#E5E6EB] overflow-hidden bg-white hover:shadow-lg transition-shadow">
+            <Link key={c.title} prefetch={false} href={c.href} className="rounded-xl border border-[#E5E6EB] overflow-hidden bg-white hover:shadow-lg transition-shadow">
               <div className={`h-[180px] bg-gradient-to-br ${c.gradient} flex items-center justify-center`}>
                 <span className="text-white text-xl font-bold">{c.title}</span>
               </div>
@@ -280,6 +283,7 @@ export default function HomePage() {
         </p>
         <div className="flex items-center gap-5">
           <Link
+            prefetch={false}
             href="/contact"
             className="gradient-primary flex items-center gap-2.5 text-white text-base font-semibold rounded-lg px-10 py-4 hover:opacity-90 transition-opacity"
           >
@@ -287,6 +291,7 @@ export default function HomePage() {
             <ArrowRight className="w-[18px] h-[18px]" />
           </Link>
           <Link
+            prefetch={false}
             href="/cases"
             className="text-[#A0AEC0] text-base border border-white/20 rounded-lg px-10 py-4 hover:text-white hover:border-white/40 transition-colors"
           >

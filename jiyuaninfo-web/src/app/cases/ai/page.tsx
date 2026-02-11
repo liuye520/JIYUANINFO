@@ -81,7 +81,7 @@ export default function AICasePage() {
           </div>
           <div className="flex-1">
             <div className="relative rounded-xl overflow-hidden h-[300px] w-full">
-              <Image src="/images/case-detail-ai.jpg" alt="企业AI案例" fill className="object-cover" />
+              <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/case-detail-ai.jpg" alt="企业AI案例" fill className="object-cover" />
             </div>
           </div>
         </div>
@@ -147,6 +147,7 @@ export default function AICasePage() {
           <h2 className="text-2xl font-bold text-[#1D2129] mb-8">想了解更多企业AI解决方案？</h2>
           <div className="flex items-center justify-center gap-4">
             <Link
+              prefetch={false}
               href="/contact"
               className="inline-flex items-center gap-2 bg-[#2B5AED] text-white px-8 py-3 rounded-lg hover:bg-[#1A4ADB] transition-colors font-medium"
             >
@@ -154,6 +155,7 @@ export default function AICasePage() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
+              prefetch={false}
               href="/cases"
               className="inline-flex items-center gap-2 border border-[#E5E6EB] text-[#4E5969] px-8 py-3 rounded-lg hover:bg-[#F7F8FA] transition-colors font-medium"
             >

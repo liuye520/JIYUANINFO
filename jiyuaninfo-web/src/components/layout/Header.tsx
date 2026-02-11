@@ -21,8 +21,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between h-[72px] bg-[#0D1117] px-20">
       <div className="flex items-center gap-12 h-full">
-        <Link href="/" className="flex items-center gap-2.5">
-          <Image src="/images/logo-icon.jpg" alt="济元信息" width={36} height={36} className="h-9 w-9 rounded-md" />
+        <Link href="/" prefetch={false} className="flex items-center gap-2.5">
+          <Image src="https://zkjygxb.oss-cn-wulanchabu.aliyuncs.com/jiyuaninfo/images/logo-icon.jpg" alt="济元信息" width={36} height={36} className="h-9 w-9 rounded-md" />
           <span className="text-white text-lg font-bold">济元信息</span>
         </Link>
         <nav className="flex items-center gap-9">
@@ -35,6 +35,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
+                prefetch={false}
                 className={`text-sm transition-colors hover:text-white ${
                   isActive
                     ? "text-white font-medium"
